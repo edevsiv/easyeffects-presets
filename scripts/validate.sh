@@ -24,8 +24,13 @@ REQUIRED_DIRS=(
   references
   benchmark
   measurements
+  measurements/datasheets
+  measurements/hardware
+  measurements/version-history
   autoeq
   impulse-responses
+  impulse-responses/catalog
+  release
   .github/workflows
 )
 
@@ -43,8 +48,14 @@ REQUIRED_FILES=(
   docs/PIPEWIRE.md
   docs/MPV.md
   docs/methodology/TEST_PROTOCOL.md
+  docs/methodology/AB_TESTING.md
   docs/audio-engine/README.md
   research/FEATURE_MATRIX.md
+  research/fxsound/MAPPING.md
+  measurements/METRICS.md
+  measurements/TEST_MATRIX.md
+  autoeq/ARCHITECTURE.md
+  release/CHECKLIST_v1.0.0.md
   presets/README.md
   presets/HISTORY.md
   benchmark/README.md

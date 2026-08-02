@@ -37,8 +37,12 @@ Scoring: **3** = excellent native support · **2** = good / partial · **1** = w
 ## Our competitive claim
 
 We do not claim identical sound to Dolby/DTS/FxSound.  
-We claim the **best open, documented, PipeWire-native preset laboratory** with explicit mappings and test discipline.
+We claim the **best open, documented, PipeWire-native preset laboratory** with explicit mappings, datasheets, metrics, and test discipline.
+
+FASE 03 adds **design-audit scorecards** for every preset and engineering differentiation of heavy `*-02` chains. Listening-validated MOS scores land when `measurements/subjective/` logs are filled.
 
 ## Visual
 
 ![Benchmark overview](../screenshots/benchmark-matrix.svg)
+
+![Metrics](../screenshots/metrics-radar.svg)

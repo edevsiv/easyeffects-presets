@@ -27,7 +27,8 @@ Protocol for edits: [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/T
 | **Use case** | Action / inconsistent loudness content |
 | **Chain** | Autogain → Multiband Compressor → Equalizer → Exciter → Bass Enhancer → Stereo Tools → Limiter |
 | **v1.0.0** | Initial heavy cinematic stack |
-| **Improvements planned** | Reduce fatigue on bright headphones; optional width lock |
+| **v1.0.1-eng** | FASE 03 design-audit: bass amount 20→14, stereo-base 15→10 for dialog center / mud control ([log](../measurements/version-history/cinema-02-2026-08-02.md)) |
+| **Improvements planned** | Human A/B on P0 hardware; optional night-mode DRC sibling |
 
 ## music-hd-01
 
@@ -49,6 +50,7 @@ Protocol for edits: [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/T
 | **Use case** | Playlists, background listening, weak speakers |
 | **Chain** | Autogain → Multiband → Equalizer → Exciter → Bass → Stereo → Limiter |
 | **v1.0.0** | Initial enhanced music stack |
+| **v1.0.1-eng** | FASE 03: moderated bass/exciter/width for Music Fidelity ([log](../measurements/version-history/music-hd-02-2026-08-02.md)) |
 | **Improvements planned** | Compare vs FxSound Music presets in measurements |
 
 ## classic-music-01
@@ -82,7 +84,8 @@ Protocol for edits: [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/T
 | **Use case** | RPG / cinematic games |
 | **Chain** | Autogain → Multiband → Equalizer → Exciter → Bass → Stereo → Limiter |
 | **v1.0.0** | Initial immersive gaming stack |
-| **Improvements planned** | Latency notes vs quantum; lighter alternate |
+| **v1.0.1-eng** | FASE 03: reduced bass/width/exciter to protect 2–6 kHz cues ([log](../measurements/version-history/gaming-02-2026-08-02.md)) |
+| **Improvements planned** | Latency notes vs quantum; human A/B vs gaming-01 |
 
 ## voice-boost-01
 
@@ -104,7 +107,8 @@ Protocol for edits: [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/T
 | **Use case** | Variety content when `voice-boost-01` is too mild |
 | **Chain** | Autogain → Multiband → Equalizer → Exciter → Bass → Stereo → Limiter |
 | **v1.0.0** | Initial enhanced voice/content stack |
-| **Improvements planned** | Align naming vs true “voice” vs “content loudness” |
+| **v1.0.1-eng** | FASE 03: cut extreme bass/width/exciter conflicting with Voice Clarity ([log](../measurements/version-history/voice-boost-02-2026-08-02.md)) |
+| **Improvements planned** | Human A/B vs voice-boost-01; naming clarity |
 
 ## volume-booster-01
 
@@ -126,7 +130,8 @@ Protocol for edits: [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/T
 | **Use case** | Windows FxSound migrants; wow-factor listening |
 | **Chain** | Autogain → Multiband → Equalizer → Exciter → Bass → Stereo → Limiter |
 | **v1.0.0** | Initial experimental enhancer |
-| **Improvements planned** | Knob translation table from FxSound research; split presets |
+| **v1.0.1-eng** | FASE 03: stereo-base 15→12 for mono fold-down; mapping doc added ([log](../measurements/version-history/fxsound-ultimate-02-2026-08-02.md)) |
+| **Improvements planned** | Split clarity/bass variants after A/B vs real FxSound |
 
 ---
 
@@ -134,7 +139,8 @@ Protocol for edits: [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/T
 
 When changing a JSON preset:
 
-1. Run the test protocol
+1. Run the test protocol + A/B protocol
 2. Add a new dated section under the preset (`v1.1.0`, `v1.1.1`, …)
-3. Update [../CHANGELOG.md](../CHANGELOG.md)
-4. Link measurement log path if available
+3. Add `measurements/version-history/<preset>-YYYY-MM-DD.md`
+4. Update datasheet scores
+5. Update [../CHANGELOG.md](../CHANGELOG.md)

@@ -60,7 +60,7 @@ Participation is governed by our [Code of Conduct](CODE_OF_CONDUCT.md).
    - Category `README.md` if present
    - [CHANGELOG.md](CHANGELOG.md) under `### Added` / `### Changed`
 
-5. **Listening protocol** — follow [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md) and attach a measurements log for DSP changes.
+5. **Listening protocol** — follow [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md) and [docs/methodology/AB_TESTING.md](docs/methodology/AB_TESTING.md); attach datasheet + version-history for DSP changes.
 
 6. **Safety** — include a limiter (or maximizer used carefully) to avoid clipping when boosting gain.
 

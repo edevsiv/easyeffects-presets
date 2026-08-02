@@ -50,5 +50,9 @@ See [../docs/INSTALL.md](../docs/INSTALL.md) or run:
 ## History & methodology
 
 - [HISTORY.md](HISTORY.md) — objectives, chains, planned improvements per preset
+- [../measurements/datasheets/](../measurements/datasheets/) — technical sheets + metric scores
+- [../measurements/TEST_MATRIX.md](../measurements/TEST_MATRIX.md) — full test matrix
 - [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/TEST_PROTOCOL.md) — required before DSP PRs
+- [../docs/methodology/AB_TESTING.md](../docs/methodology/AB_TESTING.md) — A/B protocol
 - [../research/FEATURE_MATRIX.md](../research/FEATURE_MATRIX.md) — commercial feature mapping
+- [../research/fxsound/MAPPING.md](../research/fxsound/MAPPING.md) — FxSound map

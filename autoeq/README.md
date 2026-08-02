@@ -1,11 +1,9 @@
 # AutoEQ workspace
 
-Placeholder for headphone correction targets and conversion notes (Peace/AutoEQ → EasyEffects Equalizer bands).
+| Doc | Purpose |
+|-----|---------|
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Integration / conversion / validation design |
+| (future) `targets/` | Notes for specific headphone IDs |
+| (future) `scripts` hooks | Batch APO → EE helpers |
 
-## Planned contents
-
-- Links to [AutoEQ](https://github.com/jaakkopasanen/AutoEQ) results for common headphones
-- Scripts to translate peak filters → EasyEffects bands
-- Preset variants: `music-hd-01-<headphone-id>` (future)
-
-Do not vendor large datasets without license review.
+Harman target curves are the default research reference for over-ear / in-ear preference.

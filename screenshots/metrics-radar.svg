@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-label="Official metrics">
+  <rect width="1000" height="560" fill="#0b1220"/>
+  <text x="40" y="48" fill="#f2f6fc" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700">Official metrics (15)</text>
+  <text x="40" y="78" fill="#8b9bb4" font-family="DejaVu Sans, sans-serif" font-size="14">Voice · Bass · Treble · Width · Dynamics · Fatigue · Loudness · Gaming · Movie · Music</text>
+  <g font-family="DejaVu Sans, sans-serif" font-size="14" fill="#e8eef7">
+    <rect x="40" y="120" width="280" height="44" rx="8" fill="#152033" stroke="#5bbcff"/><text x="58" y="147">Voice Clarity</text>
+    <rect x="360" y="120" width="280" height="44" rx="8" fill="#152033" stroke="#7ddea2"/><text x="378" y="147">Bass Control</text>
+    <rect x="680" y="120" width="280" height="44" rx="8" fill="#152033" stroke="#ffd166"/><text x="698" y="147">Treble Detail</text>
+    <rect x="40" y="184" width="280" height="44" rx="8" fill="#152033" stroke="#c7a6ff"/><text x="58" y="211">Stereo Width</text>
+    <rect x="360" y="184" width="280" height="44" rx="8" fill="#152033" stroke="#ff8b6b"/><text x="378" y="211">Dynamic Control</text>
+    <rect x="680" y="184" width="280" height="44" rx="8" fill="#152033" stroke="#5bbcff"/><text x="698" y="211">Listening Fatigue</text>
+    <rect x="40" y="248" width="280" height="44" rx="8" fill="#152033" stroke="#7ddea2"/><text x="58" y="275">Perceived Loudness</text>
+    <rect x="360" y="248" width="280" height="44" rx="8" fill="#152033" stroke="#ffd166"/><text x="378" y="275">Gaming Positioning</text>
+    <rect x="680" y="248" width="280" height="44" rx="8" fill="#152033" stroke="#c7a6ff"/><text x="698" y="275">Movie Immersion</text>
+    <rect x="360" y="312" width="280" height="44" rx="8" fill="#152033" stroke="#ff8b6b"/><text x="378" y="339">Music Fidelity</text>
+  </g>
+  <text x="40" y="420" fill="#9eb0c8" font-family="DejaVu Sans, sans-serif" font-size="15">Evidence: design-audit ’ ab-test ’ subjective-log ’ objective-measure</text>
+  <text x="40" y="520" fill="#5c6b82" font-family="DejaVu Sans, sans-serif" font-size="12">screenshots/metrics-radar.svg</text>
+</svg>

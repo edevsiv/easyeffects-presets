@@ -58,8 +58,12 @@ Presets are stored as `.fac` files (FxSound format), not EasyEffects JSON.
 
 Project preset inspired by this stack: [`fxsound-ultimate-02`](../../presets/experimental/fxsound-ultimate-02.json).
 
+## Full mapping
+
+See **[MAPPING.md](MAPPING.md)** for Clarity / Dynamic Boost / Ambience / Bass / Surround / Fidelity → EasyEffects equivalents and suggested parameter ranges.
+
 ## Recommended research next steps
 
 1. Read DfxDsp sources for effect order and gain staging.
-2. A/B FxSound “Cinema” / “Music” vs EasyEffects experimental presets on identical files.
-3. Document knob→parameter translation tables for contributors.
+2. A/B FxSound “Cinema” / “Music” vs EasyEffects experimental presets on identical files (use [AB_TESTING.md](../../docs/methodology/AB_TESTING.md)).
+3. Refine translation tables after measurement logs on notebook speakers.

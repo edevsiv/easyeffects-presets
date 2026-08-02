@@ -56,15 +56,32 @@ Full catalog: [presets/README.md](presets/README.md)
 ## Features
 
 - **11** output presets across **5** categories
-- Kebab-case filenames and documented plugin chains
+- Scientific datasheets, metrics (1–5), and test matrix for every preset
+- Hardware bank + A/B protocol (old / new / Flat / FxSound / Dolby)
 - Research lab: FxSound, Dolby, DTS, Sonar, Peace, OEM suites
 - Audio engine handbook + official listening protocol
 - Documentary benchmark vs commercial enhancers
+- AutoEQ architecture (design) + open IR catalog (no binaries yet)
 - One-command installer (`scripts/install.sh`)
 - JSON + structure validation (`scripts/validate.sh`)
 - GitHub Actions CI
 - Guides for EasyEffects, PipeWire, and MPV
 - MIT licensed
+
+## Scientific methodology
+
+Presets are engineered products, not vibe tweaks.
+
+1. **Declare objective** and primary metrics ([measurements/METRICS.md](measurements/METRICS.md))
+2. **Set parameters** with datasheet justification ([measurements/datasheets/](measurements/datasheets/))
+3. **design-audit** scorecard against category weights
+4. **A/B test** vs previous revision + Flat (+ FxSound/Dolby when relevant) — [docs/methodology/AB_TESTING.md](docs/methodology/AB_TESTING.md)
+5. **Log** subjective/objective evidence under `measurements/`
+6. **Record** why/what/expected in [measurements/version-history/](measurements/version-history/)
+
+Calibration overview: [measurements/TEST_MATRIX.md](measurements/TEST_MATRIX.md) · Engineering pass: [measurements/ENGINEERING_REVIEW_FASE03.md](measurements/ENGINEERING_REVIEW_FASE03.md)
+
+![Official metrics](screenshots/metrics-radar.svg)
 
 ## Methodology & research
 
@@ -72,11 +89,17 @@ Full catalog: [presets/README.md](presets/README.md)
 |----------|-------------|
 | [research/](research/) | DSP research lab & commercial suite notes |
 | [research/FEATURE_MATRIX.md](research/FEATURE_MATRIX.md) | Capability matrix → EasyEffects equivalents |
+| [research/fxsound/MAPPING.md](research/fxsound/MAPPING.md) | FxSound knob → EasyEffects map |
 | [docs/audio-engine/](docs/audio-engine/) | Plugin engineering handbook |
 | [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md) | Official preset validation protocol |
+| [docs/methodology/AB_TESTING.md](docs/methodology/AB_TESTING.md) | Official A/B protocol |
+| [measurements/](measurements/) | Metrics, datasheets, hardware, logs |
+| [autoeq/ARCHITECTURE.md](autoeq/ARCHITECTURE.md) | AutoEQ integration design (not implemented) |
+| [impulse-responses/catalog/](impulse-responses/catalog/) | Open IR/HRTF catalog |
 | [references/](references/) | Reference films, music, speech, games |
 | [benchmark/](benchmark/) | Comparative benchmark scorecard |
 | [presets/HISTORY.md](presets/HISTORY.md) | Per-preset objectives & change ledger |
+| [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md) | v1.0.0 release checklist |
 | [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md) | Technical roadmap through **v3.0** |
 
 ![DSP architecture](screenshots/dsp-architecture.svg)
@@ -134,20 +157,21 @@ cp presets/*/*.json ~/.local/share/easyeffects/output/
 
 ```text
 easyeffects-presets/
-├── AUDIO_ROADMAP.md     # technical roadmap → v3.0
-├── research/            # commercial DSP research + feature matrix
+├── AUDIO_ROADMAP.md
+├── release/CHECKLIST_v1.0.0.md
+├── research/            # commercial DSP research + FxSound mapping
+├── measurements/        # metrics, datasheets, hardware, A/B logs
 ├── docs/
-│   ├── audio-engine/    # plugin handbook
-│   ├── methodology/     # test protocol
+│   ├── audio-engine/
+│   ├── methodology/     # test + A/B protocols
 │   ├── INSTALL.md
 │   ├── PIPEWIRE.md
 │   └── MPV.md
-├── references/          # listening reference library
-├── benchmark/           # comparative scorecard
-├── measurements/        # listening logs
-├── autoeq/              # future headphone correction
-├── impulse-responses/   # future convolution IRs
-├── presets/             # categorized JSON + HISTORY.md
+├── references/
+├── benchmark/
+├── autoeq/              # AutoEQ architecture (design)
+├── impulse-responses/   # IR catalog (no binaries yet)
+├── presets/
 ├── screenshots/
 ├── scripts/
 ├── mpv/
@@ -273,8 +297,17 @@ Distributed under the [MIT License](LICENSE).
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) and follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
+### How to propose preset improvements
+
+1. Change JSON only with engineering rationale (not taste-only).
+2. Update the preset [datasheet](measurements/datasheets/) and add `measurements/version-history/` entry.
+3. Run A/B vs previous + Flat using [AB_TESTING.md](docs/methodology/AB_TESTING.md).
+4. Attach scores for primary category metrics.
+5. Pass local validation:
+
 ```bash
 ./scripts/validate.sh
+python3 scripts/check_markdown_links.py
 ```
 
 Security reports: [SECURITY.md](SECURITY.md)

@@ -1,9 +1,9 @@
 # Impulse responses
 
-Placeholder for vetted convolution kernels:
+| Path | Purpose |
+|------|---------|
+| [catalog/](catalog/) | Open IR/HRTF sources (no binaries yet) |
+| (future) `hrtf/` | Vetted headphone virtualization kernels |
+| (future) `rooms/` | Subtle ambience IRs |
 
-- Headphone HRTF / binaural IRs
-- Speaker crosstalk / room IRs
-- HeSuVi-compatible open matrices (license permitting)
-
-See [../docs/audio-engine/Convolver.md](../docs/audio-engine/Convolver.md).
+Convolver presets are **out of scope until** catalog entries pass the acceptance checklist.

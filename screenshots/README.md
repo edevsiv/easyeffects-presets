@@ -18,3 +18,4 @@ SVG placeholders for documentation. Replace with real EasyEffects captures when 
 | [fxsound-ultimate-02.svg](fxsound-ultimate-02.svg) | experimental |
 | [dsp-architecture.svg](dsp-architecture.svg) | preset architecture diagram |
 | [benchmark-matrix.svg](benchmark-matrix.svg) | documentary benchmark chart |
+| [metrics-radar.svg](metrics-radar.svg) | official metrics overview |

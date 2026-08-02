@@ -25,8 +25,13 @@ Become the primary **open-source reference** for EasyEffects presets by combinin
 | Official test protocol | Done (FASE 02) |
 | Documentary benchmark | Done (FASE 02) |
 | Preset history ledger | Done (FASE 02) |
+| Metrics + datasheets + hardware bank | Done (FASE 03) |
+| A/B protocol + FxSound mapping | Done (FASE 03) |
+| Design-audit optimization of `*-02` | Done (FASE 03) |
+| AutoEQ architecture + IR catalog | Done (FASE 03, design only) |
+| Human A/B logs on P0 hardware | Pending |
 
-**Exit criteria:** methodology exists; presets remain the FASE 01 set with documented intent.
+**Exit criteria for listening-validated v1.0.0:** checklist in [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md).
 
 ### v1.1 — Listening iteration
 

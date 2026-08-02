@@ -19,12 +19,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Preset history ledger (`presets/HISTORY.md`)
 - Placeholders for `autoeq/` and `impulse-responses/`
 - Architecture and benchmark SVG diagrams
+- Official metrics, test matrix, and per-preset datasheets (`measurements/`)
+- Hardware bank by device class
+- A/B testing protocol vs old / Flat / FxSound / Dolby
+- FxSound complete mapping (`research/fxsound/MAPPING.md`)
+- AutoEQ integration architecture (design only)
+- Open IR/HRTF catalog (no binaries)
+- v1.0.0 release checklist
+
+### Changed
+
+- Engineering optimization (design-audit) of heavy `*-02` presets: `cinema-02`, `music-hd-02`, `gaming-02`, `voice-boost-02`, `fxsound-ultimate-02` — documented in `measurements/version-history/`
 
 ### Planned
 
 - Real screenshots of EasyEffects graphs per preset
-- Filled measurement logs for all presets
-- Additional headphone-oriented EQ profiles
+- Filled human A/B logs on P0 hardware
+- Additional headphone-oriented EQ profiles (AutoEQ overlays)
 - Autoload examples for application-specific routing
 - Flatpak one-liner installer improvements
 
