@@ -7,33 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Planned
+
+- Community multi-listener sessions toward Reference seals
+- Hardware scorecards beyond HW-001
+- AutoEQ / Convolver user workflows; static site from `docs/site/`
+
+## [1.0.0] - 2026-08-02
+
 ### Added
 
-- **FASE 06** EasyEffects Audio Platform layer (`platform/`)
-  - Architecture, profile schema + `profiles.json`, 11 audio-profile cards
-  - Hardware taxonomy (Realtek/ALC*, DAC, HDMI, BT, speakers, headphones, IEM, …) + HW-001 scorecard
-  - DSP knowledge base (multiband, limiter, fatigue, dynamics, stereo, AutoEQ, Convolver, IR)
-  - Tools: search design + recommend-by-hardware matrix
-  - Community program + governance + release channels (Nightly→Reference)
-  - `docs/site/` website information architecture
-- AutoEQ `INTEGRATION.md` + `WORKFLOW.md`
-- Open IR catalog `SCORECARD.md` + research notes
-- Roadmap replanned through **v5.0**
+- Official listening campaign **VC-2026-08-LISTEN** (11 sessions on HW-001 / L-001)
+- Release notes, presets ZIP, distro install notes, post-release checklist, final audit
+- EasyEffects Audio Platform layer (`platform/`) from FASE 06
+- Certification program, UI campaign evidence, datasheets, research lab (FASE 01–05)
 
 ### Changed
 
-- README repositioned as **audio engineering platform** (presets are artifacts)
-- No new preset JSON in FASE 06; no seal promotions
+- **9** profiles promoted Beta → Validated → **Stable**
+- README focused on Quick Start, Downloads, Profiles, Hardware, FAQ
+- Flatpak installer targets EE8 `data/easyeffects/output` (avoids config migrate/trash)
 
-### Planned
+### Seals
 
-- FASE 07: listening sessions → Validated → v1.0.0 Stable
-- Hardware search CLI + static site from `docs/site/`
-- License-cleared IR data release / Convolver workflow
+| Seal | Presets |
+|------|---------|
+| Stable | cinema-01/02, music-hd-01/02, classic-music-01, gaming-01/02, voice-boost-01/02 |
+| Beta | volume-booster-01 |
+| Experimental | fxsound-ultimate-02 |
 
-## [1.0.0-rc1] notes carried forward
-
-FASE 04 delivered: VC-2026-08 UI campaign, HW-001, real screenshots, EE8 schema fixes, calibration playbooks, APO parser, IR selection checklist.
+See [release/NOTES_v1.0.0.md](release/NOTES_v1.0.0.md).
 
 ## [1.0.0-rc1] - 2026-08-02
 
@@ -41,28 +44,6 @@ Release candidate bundling FASE 01–04: repository scaffold, research lab, DSP 
 
 See [release/NOTES_v1.0.0-rc1.md](release/NOTES_v1.0.0-rc1.md).
 
-
-## [1.0.0] - 2026-08-02
-
-### Added
-
-- Initial public repository structure for EasyEffects Presets Premium
-- Categorized output presets: movie, music, gaming, voice, experimental
-- Full open-source documentation set (README, INSTALL, PIPEWIRE, MPV, CONTRIBUTING, SECURITY, CODE_OF_CONDUCT)
-- Install and validation scripts under `scripts/`
-- Example `mpv.conf` and PipeWire notes
-- GitHub Actions workflow to validate JSON presets and repository structure
-- SVG screenshot placeholders
-
-### Presets
-
-| Preset | Category |
-|--------|----------|
-| cinema-01 / cinema-02 | movie |
-| music-hd-01 / music-hd-02 / classic-music-01 | music |
-| gaming-01 / gaming-02 | gaming |
-| voice-boost-01 / voice-boost-02 | voice |
-| volume-booster-01 / fxsound-ultimate-02 | experimental |
-
 [Unreleased]: https://github.com/edevsiv/easyeffects-presets/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/edevsiv/easyeffects-presets/releases/tag/v1.0.0
+[1.0.0-rc1]: https://github.com/edevsiv/easyeffects-presets/releases/tag/v1.0.0-rc1

@@ -5,7 +5,7 @@
 | ID | `volume-booster-01` |
 | Category | experimental |
 | Objective | Simple loudness shelf boost |
-| Version | aligned with `v1.0.0-rc1` artifact set |
+| Version | aligned with `v1.0.0` artifact set |
 | Seal | **Beta** |
 | License | MIT (repository) |
 | Preset JSON | [`presets/experimental/volume-booster-01.json`](../../presets/experimental/volume-booster-01.json) |
@@ -15,7 +15,7 @@
 | Kind | IDs / classes |
 |------|----------------|
 | Recommended | `notebook` |
-| Validated (evidence) | `HW-001` (UI/screenshots; listening pending) |
+| Validated (evidence) | `HW-001` (UI + VC-2026-08-LISTEN) |
 
 ## DSP
 
@@ -35,4 +35,4 @@
 
 ## Certification
 
-See [validation/CERTIFICATION.md](../../validation/CERTIFICATION.md). Validated seal requires listening forms.
+See [validation/CERTIFICATION.md](../../validation/CERTIFICATION.md). Listening campaign complete — seal **Beta**.

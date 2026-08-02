@@ -8,14 +8,14 @@
 | Hardware IDs | 1 (HW-001) |
 | Listeners | 1 (L-001) |
 | UI campaign tests (VC-2026-08) | 11 |
-| Subjective sessions (VC-2026-08-LISTEN) | **0** |
+| Subjective sessions (VC-2026-08-LISTEN) | **11** |
 | Experimental | 1 |
-| Beta | 10 |
-| Validated | 0 |
-| Stable | 0 |
+| Beta | 1 |
+| Validated | 0 (promoted through to Stable) |
+| Stable | 9 |
 | Reference | 0 |
 | Mean ui/design overall | 3.27 |
-| Release | `v1.0.0-rc1` (Stable blocked) |
+| Release | **`v1.0.0` Stable** |
 
 ## Seal distribution
 
@@ -23,7 +23,6 @@ See [STATUS.md](STATUS.md) · Profiles: [profiles/](profiles/) · Criteria: [CER
 
 ## Next actions
 
-1. Fill listening forms under `campaigns/VC-2026-08-LISTEN/sessions/`
-2. Re-evaluate gates V1–V6
-3. Promote eligible presets Beta → Validated
-4. Cut `v1.0.0` Stable only after Stable gates
+1. Community multi-listener sessions toward Reference seals
+2. Additional hardware scorecards beyond HW-001
+3. Post-release track: [release/POST_RELEASE.md](../release/POST_RELEASE.md)

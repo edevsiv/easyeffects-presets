@@ -77,6 +77,7 @@ REQUIRED_FILES=(
   validation/CAMPAIGN_VC-2026-08.md
   autoeq/ARCHITECTURE.md
   release/CHECKLIST_v1.0.0.md
+  release/NOTES_v1.0.0.md
   release/NOTES_v1.0.0-rc1.md
   presets/README.md
   presets/HISTORY.md

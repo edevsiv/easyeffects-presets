@@ -5,7 +5,7 @@
 | Category | experimental |
 | Seal | **Beta** |
 | File | `presets/experimental/volume-booster-01.json` |
-| Certification eval (FASE 05) | Beta OK · Validated FAIL (no listening form) |
+| Certification eval (Milestone 02) | Beta OK · Validated FAIL (V4/V5) · remains Beta |
 | Reference hardware | HW-001 |
 
 ## Technical sheet
@@ -26,26 +26,26 @@ Category comparison: [../COMPARE.md](../COMPARE.md) · Matrix: [../../research/F
 | Campaign | Evidence |
 |----------|----------|
 | VC-2026-08 | UI screenshots + ui-load log [../logs/volume-booster-01.md](../logs/volume-booster-01.md) |
-| VC-2026-08-LISTEN | _pending_ |
+| VC-2026-08-LISTEN | [VC-2026-08-LISTEN](../campaigns/VC-2026-08-LISTEN/sessions/20260802-L001-volume-booster-01.md) (keep Beta) |
 
 ## Results
 
-See [../logs/volume-booster-01.md](../logs/volume-booster-01.md) (design-audit + ui-load scores). Subjective MOS: none yet.
+Subjective MOS filed; **not** promoted (loudness tool / gates unmet).
 
 ## Hardware tested
 
 | ID | Result |
 |----|--------|
-| HW-001 | UI load + screenshots |
+| HW-001 | UI load + listening (Beta retained) |
 
 ## Limitations
 
 Crude flat +2 dB shelf.
 
-## Promotion checklist (Beta → Validated)
+## Promotion checklist (Beta → Validated → Stable)
 
-- [ ] Listening form filed
-- [ ] A/B vs Flat
+- [x] Listening form filed
+- [x] A/B vs Flat
 - [ ] Primary metrics gate
 - [ ] Fatigue gate
-- [ ] Reproducibility block
+- [x] Reproducibility block

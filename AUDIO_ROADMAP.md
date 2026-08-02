@@ -27,16 +27,15 @@ Become the primary **open-source Linux audio engineering platform** around EasyE
 | UI validation campaign + RC1 | Done (FASE 04) |
 | Certification / listening program | Done scaffolding (FASE 05) |
 | **Audio Platform layer** | **Done scaffolding (FASE 06)** |
-| Human listening sessions on P0 hardware | Pending (VC-2026-08-LISTEN) |
+| Human listening sessions on P0 hardware | **Done** (VC-2026-08-LISTEN → v1.0.0) |
 
-**Exit criteria for listening-validated v1.0.0 Stable:** [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md).
+**Exit criteria for listening-validated v1.0.0 Stable:** [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md) — **met**.
 
-### v1.1 — Evidence & Validated seals (FASE 07 focus)
+### v1.1 — Evidence & hardware expansion
 
-- Fill listening sessions per category on HW-001
-- Promote Beta → Validated where CERTIFICATION gates pass
-- Cut **v1.0.0 Stable** when Stable gates pass
+- Multi-listener sessions toward Reference seals
 - First community hardware scorecards beyond HW-001
+- See [release/POST_RELEASE.md](release/POST_RELEASE.md)
 
 ### v1.2 — FxSound / Dolby-inspired refinement
 

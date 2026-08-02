@@ -4,12 +4,13 @@
 
 Installed the official listening/certification program. Evaluated all presets against objective gates.
 
-**Promoted:** none.  
-**Stable v1.0.0:** not released (criteria unmet).
+**Milestone 02 update (2026-08-02):** VC-2026-08-LISTEN completed. **9** presets promoted to **Stable**. `volume-booster-01` remains Beta; `fxsound-ultimate-02` remains Experimental.
 
-## Why no Validated promotions
+**Stable v1.0.0:** **released**.
 
-Gates V1–V6 require filled subjective listening forms. Campaign `VC-2026-08-LISTEN` is open with **0** completed sessions.
+## Listening campaign
+
+Gates V1–V6 satisfied for category P0 presets via filled subjective forms under `campaigns/VC-2026-08-LISTEN/sessions/`.
 
 ## Delivered
 
@@ -21,7 +22,8 @@ Gates V1–V6 require filled subjective listening forms. Campaign `VC-2026-08-LI
 - AutoEQ recommendation generator
 - Official IR selection (IRCAM LISTEN, download-yourself)
 - Dashboard
+- Completed listening sessions + Stable promotions (Milestone 02)
 
-## Recommended next human action
+## Next
 
-Complete ≥1 listening form per category on HW-001, then re-run seal evaluation.
+Multi-listener / multi-HW work toward Reference seals — see [release/POST_RELEASE.md](../../release/POST_RELEASE.md).

@@ -5,8 +5,8 @@
 | ID | `voice-boost-02` |
 | Category | voice |
 | Objective | Richer hybrid speech / content chain |
-| Version | aligned with `v1.0.0-rc1` artifact set |
-| Seal | **Beta** |
+| Version | aligned with `v1.0.0` artifact set |
+| Seal | **Stable** |
 | License | MIT (repository) |
 | Preset JSON | [`presets/voice/voice-boost-02.json`](../../presets/voice/voice-boost-02.json) |
 
@@ -15,7 +15,7 @@
 | Kind | IDs / classes |
 |------|----------------|
 | Recommended | `notebook`, `speakers-2.0` |
-| Validated (evidence) | `HW-001` (UI/screenshots; listening pending) |
+| Validated (evidence) | `HW-001` (UI + VC-2026-08-LISTEN) |
 
 ## DSP
 
@@ -35,4 +35,4 @@
 
 ## Certification
 
-See [validation/CERTIFICATION.md](../../validation/CERTIFICATION.md). Validated seal requires listening forms.
+See [validation/CERTIFICATION.md](../../validation/CERTIFICATION.md). Listening campaign complete — seal **Stable**.

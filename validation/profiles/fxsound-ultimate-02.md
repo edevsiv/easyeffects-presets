@@ -5,7 +5,7 @@
 | Category | experimental |
 | Seal | **Experimental** |
 | File | `presets/experimental/fxsound-ultimate-02.json` |
-| Certification eval (FASE 05) | Experimental by policy · Validated FAIL |
+| Certification eval (Milestone 02) | Beta N/A · Validated FAIL (fatigue) · remains Experimental |
 | Reference hardware | HW-001 |
 
 ## Technical sheet
@@ -26,26 +26,26 @@ Category comparison: [../COMPARE.md](../COMPARE.md) · Matrix: [../../research/F
 | Campaign | Evidence |
 |----------|----------|
 | VC-2026-08 | UI screenshots + ui-load log [../logs/fxsound-ultimate-02.md](../logs/fxsound-ultimate-02.md) |
-| VC-2026-08-LISTEN | _pending_ |
+| VC-2026-08-LISTEN | [VC-2026-08-LISTEN](../campaigns/VC-2026-08-LISTEN/sessions/20260802-L001-fxsound-ultimate-02.md) (keep Experimental) |
 
 ## Results
 
-See [../logs/fxsound-ultimate-02.md](../logs/fxsound-ultimate-02.md) (design-audit + ui-load scores). Subjective MOS: none yet.
+Subjective MOS filed; **not** promoted (fatigue).
 
 ## Hardware tested
 
 | ID | Result |
 |----|--------|
-| HW-001 | UI load + screenshots |
+| HW-001 | UI load + listening (Experimental retained) |
 
 ## Limitations
 
 Wow-factor; high fatigue risk; Experimental.
 
-## Promotion checklist (Beta → Validated)
+## Promotion checklist (Beta → Validated → Stable)
 
-- [ ] Listening form filed
-- [ ] A/B vs Flat
+- [x] Listening form filed
+- [x] A/B vs Flat
 - [ ] Primary metrics gate
 - [ ] Fatigue gate
-- [ ] Reproducibility block
+- [x] Reproducibility block

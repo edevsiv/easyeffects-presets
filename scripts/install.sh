@@ -35,7 +35,9 @@ while [[ $# -gt 0 ]]; do
 done
 
 detect_target() {
-  local flatpak_cfg native_share native_cfg
+  local flatpak_share flatpak_cfg native_share native_cfg
+  # EasyEffects 8+ Flatpak uses XDG_DATA_HOME inside the sandbox (config/ triggers migrate→trash).
+  flatpak_share="${HOME}/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output"
   flatpak_cfg="${HOME}/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output"
   # Newer EasyEffects prefers XDG_DATA_HOME; older used XDG_CONFIG_HOME.
   native_share="${XDG_DATA_HOME:-$HOME/.local/share}/easyeffects/output"
@@ -43,7 +45,11 @@ detect_target() {
 
   case "$MODE" in
     flatpak)
-      echo "$flatpak_cfg"
+      if [[ -d "$(dirname "$flatpak_share")" ]] || [[ ! -d "$(dirname "$flatpak_cfg")" ]]; then
+        echo "$flatpak_share"
+      else
+        echo "$flatpak_cfg"
+      fi
       return
       ;;
     native)
@@ -56,8 +62,6 @@ detect_target() {
       ;;
   esac
 
-  # EasyEffects 8+ Flatpak may use XDG_DATA_HOME inside the sandbox.
-  flatpak_share="${HOME}/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output"
   if command -v flatpak >/dev/null 2>&1 && flatpak info com.github.wwmm.easyeffects >/dev/null 2>&1; then
     if [[ -d "$(dirname "$flatpak_share")" ]]; then
       echo "$flatpak_share"

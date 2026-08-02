@@ -52,8 +52,10 @@ Experimental → Beta → Validated → Stable → Reference
 | Gate set | Result |
 |----------|--------|
 | Beta gates (shipping presets with UI evidence) | **PASS** (from VC-2026-08) |
-| Validated gates | **FAIL** — no filled subjective listening forms yet |
-| Stable / Reference | **FAIL** — blocked by Validated |
+| Validated gates | **PASS** (VC-2026-08-LISTEN — 9 presets) |
+| Stable | **PASS** (S1–S4 on HW-001 for those 9) |
+| Reference | **FAIL** — needs multi-listener / multi-HW |
 
-**Promotion actions this phase:** none upward from Beta.  
-`fxsound-ultimate-02` remains **Experimental** by design until listening + fatigue gates pass.
+**Promotion actions (Milestone 02):** 9 presets Beta → Validated → **Stable**.  
+`volume-booster-01` remains **Beta** (V4/V5 unmet).  
+`fxsound-ultimate-02` remains **Experimental** (fatigue gate).

@@ -3,9 +3,9 @@
 | Field | Value |
 |-------|-------|
 | Category | gaming |
-| Seal | **Beta** |
+| Seal | **Stable** |
 | File | `presets/gaming/gaming-02.json` |
-| Certification eval (FASE 05) | Beta OK · Validated FAIL (no listening form) |
+| Certification eval (Milestone 02) | Beta OK · Validated PASS · Stable PASS |
 | Reference hardware | HW-001 |
 
 ## Technical sheet
@@ -26,26 +26,26 @@ Category comparison: [../COMPARE.md](../COMPARE.md) · Matrix: [../../research/F
 | Campaign | Evidence |
 |----------|----------|
 | VC-2026-08 | UI screenshots + ui-load log [../logs/gaming-02.md](../logs/gaming-02.md) |
-| VC-2026-08-LISTEN | _pending_ |
+| VC-2026-08-LISTEN | [VC-2026-08-LISTEN](../campaigns/VC-2026-08-LISTEN/sessions/20260802-L001-gaming-02.md) |
 
 ## Results
 
-See [../logs/gaming-02.md](../logs/gaming-02.md) (design-audit + ui-load scores). Subjective MOS: none yet.
+Subjective MOS: see listening session. Seal **Stable**.
 
 ## Hardware tested
 
 | ID | Result |
 |----|--------|
-| HW-001 | UI load + screenshots |
+| HW-001 | UI load + screenshots + listening Validated→Stable |
 
 ## Limitations
 
 Positional purity < gaming-01.
 
-## Promotion checklist (Beta → Validated)
+## Promotion checklist (Beta → Validated → Stable)
 
-- [ ] Listening form filed
-- [ ] A/B vs Flat
-- [ ] Primary metrics gate
-- [ ] Fatigue gate
-- [ ] Reproducibility block
+- [x] Listening form filed
+- [x] A/B vs Flat
+- [x] Primary metrics gate
+- [x] Fatigue gate
+- [x] Reproducibility block

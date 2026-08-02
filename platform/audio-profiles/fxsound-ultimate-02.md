@@ -5,7 +5,7 @@
 | ID | `fxsound-ultimate-02` |
 | Category | experimental |
 | Objective | FxSound-inspired wow-factor enhancer |
-| Version | aligned with `v1.0.0-rc1` artifact set |
+| Version | aligned with `v1.0.0` artifact set |
 | Seal | **Experimental** |
 | License | MIT (repository) |
 | Preset JSON | [`presets/experimental/fxsound-ultimate-02.json`](../../presets/experimental/fxsound-ultimate-02.json) |
@@ -15,7 +15,7 @@
 | Kind | IDs / classes |
 |------|----------------|
 | Recommended | `headphones`, `speakers-2.0` |
-| Validated (evidence) | `HW-001` (UI/screenshots; listening pending) |
+| Validated (evidence) | `HW-001` (UI + VC-2026-08-LISTEN) |
 
 ## DSP
 
@@ -35,4 +35,4 @@
 
 ## Certification
 
-See [validation/CERTIFICATION.md](../../validation/CERTIFICATION.md). Validated seal requires listening forms.
+See [validation/CERTIFICATION.md](../../validation/CERTIFICATION.md). Listening campaign complete — seal **Experimental**.

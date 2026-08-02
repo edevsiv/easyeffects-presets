@@ -14,6 +14,6 @@
 ## Rules
 
 1. Profile seals and git tags are related but not identical (a Stable tag may still contain Experimental profiles).
-2. `v1.0.0` Stable remains blocked until subjective category evidence exists.
+2. `v1.0.0` Stable is **released** (VC-2026-08-LISTEN). Further Stable tags still require checklist sign-off.
 3. Data releases (IR packs) SHOULD use separate archives with license files.
 4. Nightly never implies certification.

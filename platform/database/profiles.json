@@ -6,7 +6,7 @@
       "id": "cinema-01",
       "category": "movie",
       "objective": "Clear dialogue and balanced cinema on laptop/desktop speakers",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "notebook",
         "speakers-2.0",
@@ -27,10 +27,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/movie/cinema-01.json",
       "dossier": "validation/profiles/cinema-01.md",
       "platform_card": "platform/audio-profiles/cinema-01.md"
@@ -39,7 +39,7 @@
       "id": "cinema-02",
       "category": "movie",
       "objective": "Premium cinematic stack with autogain and multiband dynamics",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "notebook",
         "speakers-2.0"
@@ -62,10 +62,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/movie/cinema-02.json",
       "dossier": "validation/profiles/cinema-02.md",
       "platform_card": "platform/audio-profiles/cinema-02.md"
@@ -74,7 +74,7 @@
       "id": "music-hd-01",
       "category": "music",
       "objective": "Musical clarity with controlled enhancement",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "headphones",
         "usb-dac",
@@ -95,10 +95,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/music/music-hd-01.json",
       "dossier": "validation/profiles/music-hd-01.md",
       "platform_card": "platform/audio-profiles/music-hd-01.md"
@@ -107,7 +107,7 @@
       "id": "music-hd-02",
       "category": "music",
       "objective": "Fuller music enhancer stack",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "headphones",
         "speakers-2.0"
@@ -130,10 +130,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/music/music-hd-02.json",
       "dossier": "validation/profiles/music-hd-02.md",
       "platform_card": "platform/audio-profiles/music-hd-02.md"
@@ -142,7 +142,7 @@
       "id": "classic-music-01",
       "category": "music",
       "objective": "Light, natural classical / acoustic listening",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "headphones",
         "usb-dac"
@@ -162,10 +162,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/music/classic-music-01.json",
       "dossier": "validation/profiles/classic-music-01.md",
       "platform_card": "platform/audio-profiles/classic-music-01.md"
@@ -174,7 +174,7 @@
       "id": "gaming-01",
       "category": "gaming",
       "objective": "Footsteps and positional cues with bright clarity",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "gaming",
         "headphones",
@@ -195,10 +195,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/gaming/gaming-01.json",
       "dossier": "validation/profiles/gaming-01.md",
       "platform_card": "platform/audio-profiles/gaming-01.md"
@@ -207,7 +207,7 @@
       "id": "gaming-02",
       "category": "gaming",
       "objective": "Immersive gaming enhancer stack",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "gaming",
         "speakers-2.0"
@@ -230,10 +230,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/gaming/gaming-02.json",
       "dossier": "validation/profiles/gaming-02.md",
       "platform_card": "platform/audio-profiles/gaming-02.md"
@@ -242,7 +242,7 @@
       "id": "voice-boost-01",
       "category": "voice",
       "objective": "Speech intelligibility boost (output)",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "notebook",
         "headphones"
@@ -262,10 +262,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/voice/voice-boost-01.json",
       "dossier": "validation/profiles/voice-boost-01.md",
       "platform_card": "platform/audio-profiles/voice-boost-01.md"
@@ -274,7 +274,7 @@
       "id": "voice-boost-02",
       "category": "voice",
       "objective": "Richer hybrid speech / content chain",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "notebook",
         "speakers-2.0"
@@ -296,10 +296,10 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening Validated\u2192Stable (VC-2026-08-LISTEN)"
       },
       "license": "MIT",
-      "seal": "Beta",
+      "seal": "Stable",
       "preset_path": "presets/voice/voice-boost-02.json",
       "dossier": "validation/profiles/voice-boost-02.md",
       "platform_card": "platform/audio-profiles/voice-boost-02.md"
@@ -308,7 +308,7 @@
       "id": "volume-booster-01",
       "category": "experimental",
       "objective": "Simple loudness shelf boost",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "notebook"
       ],
@@ -325,7 +325,7 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI + listening; Validated gates not met \u2014 remains Beta"
       },
       "license": "MIT",
       "seal": "Beta",
@@ -337,7 +337,7 @@
       "id": "fxsound-ultimate-02",
       "category": "experimental",
       "objective": "FxSound-inspired wow-factor enhancer",
-      "version": "1.0.0-rc1",
+      "version": "1.0.0",
       "recommended_hardware": [
         "headphones",
         "speakers-2.0"
@@ -360,7 +360,7 @@
       "compatibility": {
         "easyeffects": "8.x",
         "pipewire": "1.0+",
-        "notes": "HW-001 UI verified"
+        "notes": "HW-001 UI verified; listening kept Experimental (fatigue)"
       },
       "license": "MIT",
       "seal": "Experimental",
