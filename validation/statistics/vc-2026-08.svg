@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <rect width="1000" height="620" fill="#0b1220"/>
+  <text x="40" y="48" fill="#f2f6fc" font-family="DejaVu Sans,sans-serif" font-size="26" font-weight="700">VC-2026-08 statistics</text>
+  <text x="40" y="78" fill="#8b9bb4" font-family="DejaVu Sans,sans-serif" font-size="14">11 presets · 1 hardware · EasyEffects 8.2.8 · mean overall 3.27</text>
+  <g font-family="DejaVu Sans,sans-serif" font-size="14" fill="#e8eef7">
+    <text x="40" y="140">Presets tested</text><rect x="220" y="120" width="220" height="28" fill="#5bbcff"/><text x="460" y="140">11 / 11</text>
+    <text x="40" y="190">Hardware IDs</text><rect x="220" y="170" width="40" height="28" fill="#7ddea2"/><text x="280" y="190">1 (HW-001)</text>
+    <text x="40" y="240">Screenshot sets</text><rect x="220" y="220" width="200" height="28" fill="#ffd166"/><text x="440" y="240">main+EQ (+comp)</text>
+    <text x="40" y="290">EE8 compat fixes</text><rect x="220" y="270" width="120" height="28" fill="#ff8b6b"/><text x="360" y="290">bass + limiter</text>
+    <text x="40" y="340">Beta seals</text><rect x="220" y="320" width="200" height="28" fill="#c7a6ff"/><text x="440" y="340">10 Beta + 1 Experimental</text>
+    <text x="40" y="390">Mean overall</text><rect x="220" y="370" width="261" height="28" fill="#7ddea2"/><text x="440" y="390">3.27 / 5.0</text>
+  </g>
+  <text x="40" y="480" fill="#9eb0c8" font-family="DejaVu Sans,sans-serif" font-size="14">Subjective Validated seals: 0 (pending A/B logs)</text>
+  <text x="40" y="580" fill="#5c6b82" font-family="DejaVu Sans,sans-serif" font-size="12">validation/statistics/vc-2026-08.svg</text>
+</svg>

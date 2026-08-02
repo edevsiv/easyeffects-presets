@@ -9,35 +9,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Research laboratory (`research/`) covering FxSound, Dolby, DTS:X, SteelSeries Sonar, Peace/APO, Realtek, Waves MaxxAudio, Nahimic, EasyEffects, PipeWire, Linux audio
-- Feature matrix mapping commercial capabilities to EasyEffects plugins
-- Audio engine handbook under `docs/audio-engine/`
-- Official listening test protocol and measurement log template
-- Reference content library (`references/`)
-- Documentary benchmark (`benchmark/`)
-- `AUDIO_ROADMAP.md` through v3.0
-- Preset history ledger (`presets/HISTORY.md`)
-- Placeholders for `autoeq/` and `impulse-responses/`
-- Architecture and benchmark SVG diagrams
-- Official metrics, test matrix, and per-preset datasheets (`measurements/`)
-- Hardware bank by device class
-- A/B testing protocol vs old / Flat / FxSound / Dolby
-- FxSound complete mapping (`research/fxsound/MAPPING.md`)
-- AutoEQ integration architecture (design only)
-- Open IR/HRTF catalog (no binaries)
-- v1.0.0 release checklist
+- Official validation campaign **VC-2026-08** (`validation/`)
+- Hardware database entry HW-001 (Acer Nitro AN515-51, Realtek ALC255)
+- Real EasyEffects 8.2.8 PNG screenshots for all presets
+- Validation seals (Experimental / Beta / …)
+- Calibration playbooks (`calibration/`)
+- AutoEQ experimental APO parser script
+- Open IR selection checklist
+- Release candidate notes + preset ZIP (`release/`)
+- Screenshot capture scripts
 
 ### Changed
 
-- Engineering optimization (design-audit) of heavy `*-02` presets: `cinema-02`, `music-hd-02`, `gaming-02`, `voice-boost-02`, `fxsound-ultimate-02` — documented in `measurements/version-history/`
+- EasyEffects 8 compatibility: migrate legacy `bass_enhancer` scope/blend and `limiter` schema on `*-01` presets
+- `scripts/install.sh` prefers Flatpak XDG **data** output path (EE8)
+- README gallery uses PNG captures instead of SVG placeholders
 
 ### Planned
 
-- Real screenshots of EasyEffects graphs per preset
-- Filled human A/B logs on P0 hardware
+- Subjective A/B logs per category → Validated seals → v1.0.0 Stable
+- Filled measurement logs for all presets on more devices
 - Additional headphone-oriented EQ profiles (AutoEQ overlays)
 - Autoload examples for application-specific routing
-- Flatpak one-liner installer improvements
+
+## [1.0.0-rc1] - 2026-08-02
+
+Release candidate bundling FASE 01–04: repository scaffold, research lab, DSP engineering, and first UI validation campaign.
+
+See [release/NOTES_v1.0.0-rc1.md](release/NOTES_v1.0.0-rc1.md).
+
 
 ## [1.0.0] - 2026-08-02
 

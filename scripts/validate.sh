@@ -27,6 +27,10 @@ REQUIRED_DIRS=(
   measurements/datasheets
   measurements/hardware
   measurements/version-history
+  validation
+  validation/hardware
+  validation/logs
+  calibration
   autoeq
   impulse-responses
   impulse-responses/catalog
@@ -54,8 +58,11 @@ REQUIRED_FILES=(
   research/fxsound/MAPPING.md
   measurements/METRICS.md
   measurements/TEST_MATRIX.md
+  validation/STATUS.md
+  validation/CAMPAIGN_VC-2026-08.md
   autoeq/ARCHITECTURE.md
   release/CHECKLIST_v1.0.0.md
+  release/NOTES_v1.0.0-rc1.md
   presets/README.md
   presets/HISTORY.md
   benchmark/README.md

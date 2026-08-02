@@ -1,9 +1,13 @@
 # AutoEQ workspace
 
-| Doc | Purpose |
-|-----|---------|
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Integration / conversion / validation design |
-| (future) `targets/` | Notes for specific headphone IDs |
-| (future) `scripts` hooks | Batch APO → EE helpers |
+| Item | Purpose |
+|------|---------|
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Integration design |
+| [convert_apo_to_bands.py](convert_apo_to_bands.py) | Experimental APO → band table (no EE JSON write) |
+| [examples/ParametricEQ.sample.txt](examples/ParametricEQ.sample.txt) | Sample APO file |
 
-Harman target curves are the default research reference for over-ear / in-ear preference.
+```bash
+python3 autoeq/convert_apo_to_bands.py autoeq/examples/ParametricEQ.sample.txt --markdown
+```
+
+Production path remains: EasyEffects Equalizer **APO** import.

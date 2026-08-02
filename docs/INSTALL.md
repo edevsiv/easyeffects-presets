@@ -56,9 +56,10 @@ Exact paths depend on install method and EasyEffects version.
 
 | Install | Typical output presets path |
 |---------|-----------------------------|
-| Native (newer) | `~/.local/share/easyeffects/output/` |
+| Native (newer / EE8) | `~/.local/share/easyeffects/output/` |
 | Native (older) | `~/.config/easyeffects/output/` |
-| Flatpak | `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output/` |
+| Flatpak (EE8 data) | `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output/` |
+| Flatpak (legacy config) | `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output/` |
 
 Related folders you may also see: `input/`, `irs/`, `rnnoise/`, `autoload/`.
 

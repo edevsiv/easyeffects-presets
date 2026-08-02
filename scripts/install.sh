@@ -56,8 +56,14 @@ detect_target() {
       ;;
   esac
 
+  # EasyEffects 8+ Flatpak may use XDG_DATA_HOME inside the sandbox.
+  flatpak_share="${HOME}/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output"
   if command -v flatpak >/dev/null 2>&1 && flatpak info com.github.wwmm.easyeffects >/dev/null 2>&1; then
-    echo "$flatpak_cfg"
+    if [[ -d "$(dirname "$flatpak_share")" ]]; then
+      echo "$flatpak_share"
+    else
+      echo "$flatpak_cfg"
+    fi
   elif [[ -d "$(dirname "$native_share")" ]]; then
     echo "$native_share"
   else

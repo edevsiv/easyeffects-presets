@@ -12,7 +12,18 @@
 
 Curated, categorized **EasyEffects** output presets for **PipeWire** on Linux — cinema, music, gaming, voice, and experimental enhancer-style chains.
 
-![Overview](screenshots/overview.svg)
+![Overview](screenshots/overview.png)
+
+## Validation status
+
+| Item | Status |
+|------|--------|
+| Campaign | [VC-2026-08](validation/CAMPAIGN_VC-2026-08.md) (open) |
+| Hardware tested | [HW-001 Acer Nitro AN515-51](validation/hardware/HW-001-acer-nitro-an515-51.md) (Realtek ALC255) |
+| Screenshots | Real EasyEffects 8.2.8 PNG captures (all 11 presets) |
+| Preset seals | Mostly **Beta** — see [validation/STATUS.md](validation/STATUS.md) |
+| Listening tests | UI/compat complete; subjective A/B per category **pending** |
+| Scientific method | Metrics → datasheets → UI evidence → A/B protocol → seals |
 
 ## Description
 
@@ -40,29 +51,33 @@ Whether you want clearer film dialogue, punchier games, or an FxSound-like liste
 
 ## Screenshots
 
-Placeholders until real EasyEffects UI captures are added:
+Real EasyEffects **8.2.8** captures from validation campaign VC-2026-08:
 
 | Category | Preview |
 |----------|---------|
-| Overview | ![overview](screenshots/overview.svg) |
-| Movie | ![cinema-01](screenshots/cinema-01.svg) |
-| Music | ![music-hd-01](screenshots/music-hd-01.svg) |
-| Gaming | ![gaming-01](screenshots/gaming-01.svg) |
-| Voice | ![voice-boost-01](screenshots/voice-boost-01.svg) |
-| Experimental | ![fxsound-ultimate-02](screenshots/fxsound-ultimate-02.svg) |
+| Overview | ![overview](screenshots/overview.png) |
+| Movie | ![cinema-01](screenshots/cinema-01.png) |
+| Music | ![music-hd-01](screenshots/music-hd-01.png) |
+| Gaming | ![gaming-01](screenshots/gaming-01.png) |
+| Voice | ![voice-boost-01](screenshots/voice-boost-01.png) |
+| Experimental | ![fxsound-ultimate-02](screenshots/fxsound-ultimate-02.png) |
+
+Additional EQ/compressor views: [validation/screenshots/](validation/screenshots/).
 
 Full catalog: [presets/README.md](presets/README.md)
 
 ## Features
 
 - **11** output presets across **5** categories
-- Scientific datasheets, metrics (1–5), and test matrix for every preset
+- Official validation campaign with hardware DB + seals (Beta/Experimental/…)
+- Real EasyEffects screenshots (main / EQ / compressor)
+- Scientific datasheets, metrics (1–5), and test matrix
 - Hardware bank + A/B protocol (old / new / Flat / FxSound / Dolby)
 - Research lab: FxSound, Dolby, DTS, Sonar, Peace, OEM suites
 - Audio engine handbook + official listening protocol
 - Documentary benchmark vs commercial enhancers
-- AutoEQ architecture (design) + open IR catalog (no binaries yet)
-- One-command installer (`scripts/install.sh`)
+- AutoEQ APO parser (experimental) + open IR selection checklist
+- One-command installer (`scripts/install.sh`) — Flatpak XDG **data** path aware
 - JSON + structure validation (`scripts/validate.sh`)
 - GitHub Actions CI
 - Guides for EasyEffects, PipeWire, and MPV
@@ -75,13 +90,11 @@ Presets are engineered products, not vibe tweaks.
 1. **Declare objective** and primary metrics ([measurements/METRICS.md](measurements/METRICS.md))
 2. **Set parameters** with datasheet justification ([measurements/datasheets/](measurements/datasheets/))
 3. **design-audit** scorecard against category weights
-4. **A/B test** vs previous revision + Flat (+ FxSound/Dolby when relevant) — [docs/methodology/AB_TESTING.md](docs/methodology/AB_TESTING.md)
-5. **Log** subjective/objective evidence under `measurements/`
-6. **Record** why/what/expected in [measurements/version-history/](measurements/version-history/)
+4. **UI-load / screenshot evidence** on registered hardware ([validation/](validation/))
+5. **A/B test** vs previous revision + Flat (+ FxSound/Dolby when relevant)
+6. **Assign seal** (Experimental → Beta → Validated → Stable)
 
-Calibration overview: [measurements/TEST_MATRIX.md](measurements/TEST_MATRIX.md) · Engineering pass: [measurements/ENGINEERING_REVIEW_FASE03.md](measurements/ENGINEERING_REVIEW_FASE03.md)
-
-![Official metrics](screenshots/metrics-radar.svg)
+Calibration playbooks: [calibration/](calibration/).
 
 ## Methodology & research
 
@@ -94,12 +107,16 @@ Calibration overview: [measurements/TEST_MATRIX.md](measurements/TEST_MATRIX.md)
 | [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md) | Official preset validation protocol |
 | [docs/methodology/AB_TESTING.md](docs/methodology/AB_TESTING.md) | Official A/B protocol |
 | [measurements/](measurements/) | Metrics, datasheets, hardware, logs |
-| [autoeq/ARCHITECTURE.md](autoeq/ARCHITECTURE.md) | AutoEQ integration design (not implemented) |
-| [impulse-responses/catalog/](impulse-responses/catalog/) | Open IR/HRTF catalog |
+| [validation/](validation/) | Official campaign, seals, screenshots, results |
+| [calibration/](calibration/) | Device-class calibration playbooks |
+| [autoeq/ARCHITECTURE.md](autoeq/ARCHITECTURE.md) | AutoEQ integration design |
+| [autoeq/convert_apo_to_bands.py](autoeq/convert_apo_to_bands.py) | Experimental APO parser |
+| [impulse-responses/SELECTION.md](impulse-responses/SELECTION.md) | Open IR selection checklist |
 | [references/](references/) | Reference films, music, speech, games |
 | [benchmark/](benchmark/) | Comparative benchmark scorecard |
 | [presets/HISTORY.md](presets/HISTORY.md) | Per-preset objectives & change ledger |
-| [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md) | v1.0.0 release checklist |
+| [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md) | v1.0.0 checklist |
+| [release/NOTES_v1.0.0-rc1.md](release/NOTES_v1.0.0-rc1.md) | RC1 release notes |
 | [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md) | Technical roadmap through **v3.0** |
 
 ![DSP architecture](screenshots/dsp-architecture.svg)
@@ -157,22 +174,16 @@ cp presets/*/*.json ~/.local/share/easyeffects/output/
 
 ```text
 easyeffects-presets/
-├── AUDIO_ROADMAP.md
-├── release/CHECKLIST_v1.0.0.md
-├── research/            # commercial DSP research + FxSound mapping
-├── measurements/        # metrics, datasheets, hardware, A/B logs
-├── docs/
-│   ├── audio-engine/
-│   ├── methodology/     # test + A/B protocols
-│   ├── INSTALL.md
-│   ├── PIPEWIRE.md
-│   └── MPV.md
-├── references/
-├── benchmark/
-├── autoeq/              # AutoEQ architecture (design)
-├── impulse-responses/   # IR catalog (no binaries yet)
-├── presets/
-├── screenshots/
+├── validation/          # campaign, hardware DB, seals, real screenshots
+├── calibration/         # device-class playbooks
+├── measurements/        # metrics, datasheets, version-history
+├── research/            # commercial DSP research
+├── docs/                # install + audio-engine + methodology
+├── autoeq/              # AutoEQ architecture + APO parser
+├── impulse-responses/   # IR catalog + selection checklist
+├── presets/             # categorized JSON + HISTORY
+├── release/             # checklists, notes, dist ZIP
+├── screenshots/         # PNG gallery (from validation)
 ├── scripts/
 ├── mpv/
 └── pipewire/
@@ -271,14 +282,16 @@ More: [docs/INSTALL.md](docs/INSTALL.md), [docs/PIPEWIRE.md](docs/PIPEWIRE.md)
 
 Product / packaging ideas:
 
-- [ ] Real UI screenshots per preset
+- [x] Real UI screenshots per preset (VC-2026-08)
 - [ ] Input (microphone) preset pack
 - [ ] Autoload examples per application
 - [ ] AUR / packaging helpers
 - [ ] Device-specific EQ (laptop speakers, IEMs)
-- [ ] Convolver / HRTF demos
+- [ ] Convolver / HRTF demos (IRs selected, not vendored yet)
+- [ ] Subjective A/B logs → **Validated** seals → v1.0.0 Stable
 
-**Technical audio roadmap (v1 → v3):** see [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md).
+**Technical audio roadmap (v1 → v3):** see [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md).  
+**Release candidate:** [release/NOTES_v1.0.0-rc1.md](release/NOTES_v1.0.0-rc1.md)
 
 Track releases in [CHANGELOG.md](CHANGELOG.md) and GitHub Issues.
 

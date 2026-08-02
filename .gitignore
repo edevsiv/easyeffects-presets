@@ -39,3 +39,6 @@ node_modules/
 # EasyEffects local dumps (do not commit user machines)
 irs/*.wav
 rnnoise/*.rnnn
+
+# Capture scratch
+validation/screenshots/raw/_*.png
