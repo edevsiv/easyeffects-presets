@@ -56,12 +56,15 @@ Participation is governed by our [Code of Conduct](CODE_OF_CONDUCT.md).
 4. **Documentation** — update:
 
    - [presets/README.md](presets/README.md)
+   - [presets/HISTORY.md](presets/HISTORY.md)
    - Category `README.md` if present
    - [CHANGELOG.md](CHANGELOG.md) under `### Added` / `### Changed`
 
-5. **Safety** — include a limiter (or maximizer used carefully) to avoid clipping when boosting gain.
+5. **Listening protocol** — follow [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md) and attach a measurements log for DSP changes.
 
-6. **Do not commit** personal machine paths, IRS binaries larger than needed, or secrets.
+6. **Safety** — include a limiter (or maximizer used carefully) to avoid clipping when boosting gain.
+
+7. **Do not commit** personal machine paths, IRS binaries larger than needed, or secrets.
 
 ## Pull request process
 

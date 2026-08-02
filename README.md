@@ -16,16 +16,26 @@ Curated, categorized **EasyEffects** output presets for **PipeWire** on Linux �
 
 ## Description
 
-**EasyEffects Presets Premium** is an open-source collection of ready-to-import JSON presets for [EasyEffects](https://github.com/wwmm/easyeffects). The goal is a clean, documented, scalable repository that feels like a mature Linux-audio project: clear categories, install scripts, CI validation, and guides for PipeWire and MPV.
+**EasyEffects Presets Premium** is an open-source collection of ready-to-import JSON presets for [EasyEffects](https://github.com/wwmm/easyeffects) — and a **PipeWire DSP research laboratory**. Beyond shipping presets, we reverse-map commercial audio suites (FxSound, Dolby, DTS, Sonar, Peace, MaxxAudio, Nahimic, Realtek) to open EasyEffects building blocks, with a documented test protocol.
 
 Whether you want clearer film dialogue, punchier games, or an FxSound-like listening mode after moving from Windows, pick a category and import.
+
+## Project philosophy
+
+1. **Open over opaque** — every chain is inspectable JSON, not a closed driver knob.
+2. **Honest approximations** — we map Dolby/FxSound/DTS *goals*, we do not claim bit-identical clones.
+3. **Methodology before marketing** — presets change only after the [test protocol](docs/methodology/TEST_PROTOCOL.md).
+4. **Linux-native** — PipeWire + EasyEffects first; Windows suites are research references.
+5. **Safety** — loud enhancers end with limiters; fatigue matters as much as “wow”.
 
 ## Objectives
 
 - Ship **production-ready** EasyEffects presets with consistent naming
+- Maintain a **research lab** and feature matrix vs commercial DSP
 - Document **install paths** for APT and Flatpak
 - Explain **PipeWire** latency / quantum trade-offs
 - Help with **MPV** stereo downmix for 5.1 cinema
+- Enforce listening methodology and preset history
 - Stay easy to **contribute** to (templates, validation, CoC)
 
 ## Screenshots
@@ -47,11 +57,41 @@ Full catalog: [presets/README.md](presets/README.md)
 
 - **11** output presets across **5** categories
 - Kebab-case filenames and documented plugin chains
+- Research lab: FxSound, Dolby, DTS, Sonar, Peace, OEM suites
+- Audio engine handbook + official listening protocol
+- Documentary benchmark vs commercial enhancers
 - One-command installer (`scripts/install.sh`)
 - JSON + structure validation (`scripts/validate.sh`)
 - GitHub Actions CI
 - Guides for EasyEffects, PipeWire, and MPV
 - MIT licensed
+
+## Methodology & research
+
+| Resource | Description |
+|----------|-------------|
+| [research/](research/) | DSP research lab & commercial suite notes |
+| [research/FEATURE_MATRIX.md](research/FEATURE_MATRIX.md) | Capability matrix → EasyEffects equivalents |
+| [docs/audio-engine/](docs/audio-engine/) | Plugin engineering handbook |
+| [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md) | Official preset validation protocol |
+| [references/](references/) | Reference films, music, speech, games |
+| [benchmark/](benchmark/) | Comparative benchmark scorecard |
+| [presets/HISTORY.md](presets/HISTORY.md) | Per-preset objectives & change ledger |
+| [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md) | Technical roadmap through **v3.0** |
+
+![DSP architecture](screenshots/dsp-architecture.svg)
+
+## Architecture of presets
+
+```text
+Commercial research  →  Chain archetype  →  EasyEffects JSON  →  Test protocol  →  Measurement log  →  Release
+```
+
+Heavy cinema / enhancer archetype (example):
+
+`Autogain → Multiband Compressor → Equalizer → Exciter → Bass Enhancer → Stereo Tools → Limiter`
+
+See [docs/audio-engine/README.md](docs/audio-engine/README.md) for gain-staging rules.
 
 ## Quick install
 
@@ -94,33 +134,24 @@ cp presets/*/*.json ~/.local/share/easyeffects/output/
 
 ```text
 easyeffects-presets/
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── workflows/validate-json.yml
+├── AUDIO_ROADMAP.md     # technical roadmap → v3.0
+├── research/            # commercial DSP research + feature matrix
 ├── docs/
+│   ├── audio-engine/    # plugin handbook
+│   ├── methodology/     # test protocol
 │   ├── INSTALL.md
 │   ├── PIPEWIRE.md
 │   └── MPV.md
-├── mpv/                 # example mpv.conf
-├── pipewire/            # example quantum config
-├── presets/
-│   ├── movie/
-│   ├── music/
-│   ├── gaming/
-│   ├── voice/
-│   └── experimental/
-├── screenshots/         # SVG placeholders (+ future PNGs)
+├── references/          # listening reference library
+├── benchmark/           # comparative scorecard
+├── measurements/        # listening logs
+├── autoeq/              # future headphone correction
+├── impulse-responses/   # future convolution IRs
+├── presets/             # categorized JSON + HISTORY.md
+├── screenshots/
 ├── scripts/
-│   ├── install.sh
-│   ├── validate.sh
-│   └── check_markdown_links.py
-├── CHANGELOG.md
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-└── SECURITY.md
+├── mpv/
+└── pipewire/
 ```
 
 ## Requirements
@@ -214,21 +245,25 @@ More: [docs/INSTALL.md](docs/INSTALL.md), [docs/PIPEWIRE.md](docs/PIPEWIRE.md)
 
 ## Roadmap
 
+Product / packaging ideas:
+
 - [ ] Real UI screenshots per preset
 - [ ] Input (microphone) preset pack
 - [ ] Autoload examples per application
 - [ ] AUR / packaging helpers
-- [ ] More device-specific EQ targets (laptop speakers, IEMs)
-- [ ] Optional IRS / convolver demos
+- [ ] Device-specific EQ (laptop speakers, IEMs)
+- [ ] Convolver / HRTF demos
 
-Track progress in [CHANGELOG.md](CHANGELOG.md) and GitHub Issues.
+**Technical audio roadmap (v1 → v3):** see [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md).
+
+Track releases in [CHANGELOG.md](CHANGELOG.md) and GitHub Issues.
 
 ## Credits
 
 - [EasyEffects](https://github.com/wwmm/easyeffects) by Wellington Wallace and contributors
 - [PipeWire](https://pipewire.org/) project
 - Community preset authors listed on the [EasyEffects wiki](https://github.com/wwmm/easyeffects/wiki/Community-Presets)
-- Inspiration from commercial enhancers such as FxSound (this project is unaffiliated)
+- Research references: FxSound (open source), Dolby PC white papers, DTS Sound Unbound docs, SteelSeries Sonar, Equalizer APO / Peace, Waves MaxxAudio, Nahimic, Realtek Audio Console — all unaffiliated marks belong to their owners
 
 ## License
 

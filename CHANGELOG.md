@@ -7,9 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Research laboratory (`research/`) covering FxSound, Dolby, DTS:X, SteelSeries Sonar, Peace/APO, Realtek, Waves MaxxAudio, Nahimic, EasyEffects, PipeWire, Linux audio
+- Feature matrix mapping commercial capabilities to EasyEffects plugins
+- Audio engine handbook under `docs/audio-engine/`
+- Official listening test protocol and measurement log template
+- Reference content library (`references/`)
+- Documentary benchmark (`benchmark/`)
+- `AUDIO_ROADMAP.md` through v3.0
+- Preset history ledger (`presets/HISTORY.md`)
+- Placeholders for `autoeq/` and `impulse-responses/`
+- Architecture and benchmark SVG diagrams
+
 ### Planned
 
 - Real screenshots of EasyEffects graphs per preset
+- Filled measurement logs for all presets
 - Additional headphone-oriented EQ profiles
 - Autoload examples for application-specific routing
 - Flatpak one-liner installer improvements

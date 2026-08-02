@@ -16,3 +16,5 @@ SVG placeholders for documentation. Replace with real EasyEffects captures when 
 | [voice-boost-02.svg](voice-boost-02.svg) | voice |
 | [volume-booster-01.svg](volume-booster-01.svg) | experimental |
 | [fxsound-ultimate-02.svg](fxsound-ultimate-02.svg) | experimental |
+| [dsp-architecture.svg](dsp-architecture.svg) | preset architecture diagram |
+| [benchmark-matrix.svg](benchmark-matrix.svg) | documentary benchmark chart |

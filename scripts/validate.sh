@@ -12,10 +12,20 @@ REQUIRED_DIRS=(
   presets/voice
   presets/experimental
   docs
+  docs/audio-engine
+  docs/methodology
   screenshots
   scripts
   mpv
   pipewire
+  research
+  research/fxsound
+  research/dolby
+  references
+  benchmark
+  measurements
+  autoeq
+  impulse-responses
   .github/workflows
 )
 
@@ -26,12 +36,18 @@ REQUIRED_FILES=(
   CONTRIBUTING.md
   CODE_OF_CONDUCT.md
   SECURITY.md
+  AUDIO_ROADMAP.md
   .gitignore
   .editorconfig
   docs/INSTALL.md
   docs/PIPEWIRE.md
   docs/MPV.md
+  docs/methodology/TEST_PROTOCOL.md
+  docs/audio-engine/README.md
+  research/FEATURE_MATRIX.md
   presets/README.md
+  presets/HISTORY.md
+  benchmark/README.md
   .github/workflows/validate-json.yml
 )
 

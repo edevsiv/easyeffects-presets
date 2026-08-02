@@ -46,3 +46,9 @@ See [../docs/INSTALL.md](../docs/INSTALL.md) or run:
 ```bash
 ./scripts/install.sh
 ```
+
+## History & methodology
+
+- [HISTORY.md](HISTORY.md) — objectives, chains, planned improvements per preset
+- [../docs/methodology/TEST_PROTOCOL.md](../docs/methodology/TEST_PROTOCOL.md) — required before DSP PRs
+- [../research/FEATURE_MATRIX.md](../research/FEATURE_MATRIX.md) — commercial feature mapping

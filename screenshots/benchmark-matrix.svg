@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="Benchmark matrix">
+  <rect width="1100" height="560" fill="#0b1220"/>
+  <text x="40" y="48" fill="#f2f6fc" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700">Documentary benchmark</text>
+  <text x="40" y="78" fill="#8b9bb4" font-family="DejaVu Sans, sans-serif" font-size="14">Relative strengths — not a MOS listening score</text>
+  <g font-family="DejaVu Sans, sans-serif" font-size="14">
+    <text x="40" y="130" fill="#9eb0c8">Open auditability</text>
+    <rect x="220" y="112" width="60" height="24" fill="#7ddea2"/><text x="290" y="130" fill="#e8eef7">EE+Repo</text>
+    <rect x="400" y="112" width="60" height="24" fill="#7ddea2"/><text x="470" y="130" fill="#e8eef7">FxSound</text>
+    <rect x="580" y="112" width="40" height="24" fill="#ffd166"/><text x="630" y="130" fill="#e8eef7">Peace</text>
+    <rect x="740" y="112" width="16" height="24" fill="#ff8b6b"/><text x="770" y="130" fill="#e8eef7">Dolby/Sonar</text>
+
+    <text x="40" y="190" fill="#9eb0c8">Linux / PipeWire</text>
+    <rect x="220" y="172" width="90" height="24" fill="#7ddea2"/><text x="320" y="190" fill="#e8eef7">EasyEffects only</text>
+
+    <text x="40" y="250" fill="#9eb0c8">HRTF virtualization</text>
+    <rect x="220" y="232" width="90" height="24" fill="#7ddea2"/><text x="320" y="250" fill="#e8eef7">Dolby/DTS/Sonar</text>
+    <rect x="520" y="232" width="40" height="24" fill="#ffd166"/><text x="570" y="250" fill="#e8eef7">Peace/HeSuVi</text>
+    <rect x="720" y="232" width="28" height="24" fill="#ff8b6b"/><text x="760" y="250" fill="#e8eef7">EE today</text>
+
+    <text x="40" y="310" fill="#9eb0c8">Leveling / maximizer</text>
+    <rect x="220" y="292" width="90" height="24" fill="#7ddea2"/><text x="320" y="310" fill="#e8eef7">Dolby</text>
+    <rect x="420" y="292" width="70" height="24" fill="#7ddea2"/><text x="500" y="310" fill="#e8eef7">EasyEffects</text>
+    <rect x="620" y="292" width="50" height="24" fill="#ffd166"/><text x="680" y="310" fill="#e8eef7">FxSound</text>
+
+    <text x="40" y="370" fill="#9eb0c8">Gaming channel UX</text>
+    <rect x="220" y="352" width="90" height="24" fill="#7ddea2"/><text x="320" y="370" fill="#e8eef7">Sonar</text>
+    <rect x="420" y="352" width="50" height="24" fill="#ffd166"/><text x="480" y="370" fill="#e8eef7">EasyEffects</text>
+  </g>
+  <text x="40" y="450" fill="#8b9bb4" font-family="DejaVu Sans, sans-serif" font-size="14">See benchmark/README.md for full numeric scorecard.</text>
+  <text x="40" y="520" fill="#5c6b82" font-family="DejaVu Sans, sans-serif" font-size="12">screenshots/benchmark-matrix.svg</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-label="Preset architecture">
+  <rect width="1100" height="520" fill="#0b1220"/>
+  <text x="40" y="48" fill="#f2f6fc" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700">Preset architecture</text>
+  <text x="40" y="78" fill="#8b9bb4" font-family="DejaVu Sans, sans-serif" font-size="14">research → archetype → EasyEffects chain → protocol → release</text>
+  <g font-family="DejaVu Sans, sans-serif" font-size="15" fill="#e8eef7">
+    <rect x="40" y="120" width="180" height="70" rx="10" fill="#1c2b3d" stroke="#5bbcff"/>
+    <text x="70" y="162">Research lab</text>
+    <rect x="260" y="120" width="180" height="70" rx="10" fill="#1c2b3d" stroke="#7ddea2"/>
+    <text x="285" y="162">Chain archetype</text>
+    <rect x="480" y="120" width="180" height="70" rx="10" fill="#1c2b3d" stroke="#ffd166"/>
+    <text x="510" y="162">Plugin params</text>
+    <rect x="700" y="120" width="180" height="70" rx="10" fill="#1c2b3d" stroke="#ff8b6b"/>
+    <text x="735" y="162">Test protocol</text>
+    <rect x="920" y="120" width="140" height="70" rx="10" fill="#1c2b3d" stroke="#c7a6ff"/>
+    <text x="955" y="162">Release</text>
+  </g>
+  <path d="M220 155 H260 M440 155 H480 M660 155 H700 M880 155 H920" stroke="#5c6b82" stroke-width="3" fill="none"/>
+  <text x="40" y="250" fill="#9eb0c8" font-family="DejaVu Sans, sans-serif" font-size="16">Example heavy cinema chain</text>
+  <g font-family="DejaVu Sans, sans-serif" font-size="13" fill="#dce6f5">
+    <rect x="40" y="280" width="120" height="48" rx="8" fill="#152033" stroke="#5bbcff"/><text x="58" y="309">Autogain</text>
+    <rect x="180" y="280" width="130" height="48" rx="8" fill="#152033" stroke="#5bbcff"/><text x="195" y="309">Multiband</text>
+    <rect x="330" y="280" width="100" height="48" rx="8" fill="#152033" stroke="#7ddea2"/><text x="355" y="309">EQ</text>
+    <rect x="450" y="280" width="100" height="48" rx="8" fill="#152033" stroke="#ffd166"/><text x="468" y="309">Exciter</text>
+    <rect x="570" y="280" width="100" height="48" rx="8" fill="#152033" stroke="#ffd166"/><text x="595" y="309">Bass</text>
+    <rect x="690" y="280" width="110" height="48" rx="8" fill="#152033" stroke="#c7a6ff"/><text x="708" y="309">Stereo</text>
+    <rect x="820" y="280" width="100" height="48" rx="8" fill="#152033" stroke="#ff8b6b"/><text x="842" y="309">Limiter</text>
+  </g>
+  <text x="40" y="400" fill="#8b9bb4" font-family="DejaVu Sans, sans-serif" font-size="14">Commercial suites inform goals; EasyEffects plugins implement open approximations.</text>
+  <text x="40" y="480" fill="#5c6b82" font-family="DejaVu Sans, sans-serif" font-size="12">screenshots/dsp-architecture.svg</text>
+</svg>
