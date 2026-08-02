@@ -9,27 +9,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **FASE 05** official certification / listening program
-  - Criteria: `validation/CERTIFICATION.md`
-  - Forms: `SESSION_PROTOCOL.md`, `LISTENING_FORM.md`
-  - Campaign: `validation/campaigns/VC-2026-08-LISTEN/`
-  - Listeners, reproducibility packs, per-profile dossiers
-  - Dashboard + certification statistics SVG
-  - Hardware categories: notebook, desktop, USB DAC, headphones, gaming, Bluetooth, 2.0, 2.1
-- AutoEQ experimental `recommend.py` (Markdown recommendations; does not mutate presets)
-- Official IR candidate: IRCAM LISTEN (`impulse-responses/OFFICIAL_IR.md`) — download-yourself
+- **FASE 06** EasyEffects Audio Platform layer (`platform/`)
+  - Architecture, profile schema + `profiles.json`, 11 audio-profile cards
+  - Hardware taxonomy (Realtek/ALC*, DAC, HDMI, BT, speakers, headphones, IEM, …) + HW-001 scorecard
+  - DSP knowledge base (multiband, limiter, fatigue, dynamics, stereo, AutoEQ, Convolver, IR)
+  - Tools: search design + recommend-by-hardware matrix
+  - Community program + governance + release channels (Nightly→Reference)
+  - `docs/site/` website information architecture
+- AutoEQ `INTEGRATION.md` + `WORKFLOW.md`
+- Open IR catalog `SCORECARD.md` + research notes
+- Roadmap replanned through **v5.0**
 
 ### Changed
 
-- README: Validation Status, Reference Hardware, Listening Campaign, Scientific Validation, Roadmap
-- Seal evaluation: no Validated/Stable promotions without filled listening forms
+- README repositioned as **audio engineering platform** (presets are artifacts)
+- No new preset JSON in FASE 06; no seal promotions
 
 ### Planned
 
-- Fill VC-2026-08-LISTEN sessions → evaluate Validated gates → v1.0.0 Stable
-- Convolver preset using official IR (after license-safe packaging decision)
-- Additional headphone-oriented EQ profiles (AutoEQ overlays)
-- Autoload examples for application-specific routing
+- FASE 07: listening sessions → Validated → v1.0.0 Stable
+- Hardware search CLI + static site from `docs/site/`
+- License-cleared IR data release / Convolver workflow
 
 ## [1.0.0-rc1] notes carried forward
 

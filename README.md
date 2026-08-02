@@ -1,4 +1,4 @@
-# EasyEffects Presets Premium
+# EasyEffects Audio Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/edevsiv/easyeffects-presets?style=social)](https://github.com/edevsiv/easyeffects-presets/stargazers)
@@ -10,7 +10,19 @@
 [![PipeWire](https://img.shields.io/badge/PipeWire-audio-c75450)](https://pipewire.org/)
 [![CI](https://github.com/edevsiv/easyeffects-presets/actions/workflows/validate-json.yml/badge.svg)](https://github.com/edevsiv/easyeffects-presets/actions/workflows/validate-json.yml)
 
-Curated, categorized **EasyEffects** output presets for **PipeWire** on Linux — cinema, music, gaming, voice, and experimental enhancer-style chains.
+Open **Linux audio engineering & calibration platform** for [EasyEffects](https://github.com/wwmm/easyeffects) + [PipeWire](https://pipewire.org/) — knowledge, research, hardware scorecards, certified profiles, and tools. Shipping presets are one artifact of the platform, not the whole product.
+
+**Mission:** help any Linux audio user understand hardware → calibrate → choose a profile → optionally correct with AutoEQ/Convolver → contribute evidence.
+
+| Enter here | Path |
+|------------|------|
+| Platform hub | [platform/](platform/) |
+| Profile database | [platform/audio-profiles/](platform/audio-profiles/) · [profiles.json](platform/database/profiles.json) |
+| Hardware taxonomy | [platform/hardware/](platform/hardware/) |
+| DSP knowledge base | [platform/dsp/](platform/dsp/) |
+| Recommend by hardware | [platform/tools/recommend-by-hardware.md](platform/tools/recommend-by-hardware.md) |
+| Governance / releases | [platform/GOVERNANCE.md](platform/GOVERNANCE.md) · [RELEASE_STRATEGY.md](platform/RELEASE_STRATEGY.md) |
+| Future website IA | [docs/site/](docs/site/) |
 
 ![Overview](screenshots/overview.png)
 
@@ -67,27 +79,35 @@ Full gates: [validation/CERTIFICATION.md](validation/CERTIFICATION.md). Engineer
 
 ## Description
 
-**EasyEffects Presets Premium** is an open-source collection of ready-to-import JSON presets for [EasyEffects](https://github.com/wwmm/easyeffects) — and a **PipeWire DSP research laboratory**. Beyond shipping presets, we reverse-map commercial audio suites (FxSound, Dolby, DTS, Sonar, Peace, MaxxAudio, Nahimic, Realtek) to open EasyEffects building blocks, with a documented test protocol.
+**EasyEffects Audio Platform** (repository name: *easyeffects-presets*) is an open engineering laboratory and calibration system for Linux desktop audio. It includes:
 
-Whether you want clearer film dialogue, punchier games, or an FxSound-like listening mode after moving from Windows, pick a category and import.
+- A curated set of EasyEffects **output profiles** (JSON)
+- **Hardware** taxonomy, scorecards, and calibration playbooks
+- A **DSP knowledge base** (why/when/how — not only plugin knobs)
+- **Research** mappings from commercial suites (FxSound, Dolby, DTS, Sonar, Peace, MaxxAudio, Nahimic, Realtek)
+- **Certification** gates and listening campaigns
+- **Tools** that recommend profiles and AutoEQ steps without silently rewriting chains
+
+Start from your hardware in [platform/tools/recommend-by-hardware.md](platform/tools/recommend-by-hardware.md), not from a random preset list.
 
 ## Project philosophy
 
-1. **Open over opaque** — every chain is inspectable JSON, not a closed driver knob.
-2. **Honest approximations** — we map Dolby/FxSound/DTS *goals*, we do not claim bit-identical clones.
-3. **Methodology before marketing** — presets change only after the [test protocol](docs/methodology/TEST_PROTOCOL.md).
-4. **Linux-native** — PipeWire + EasyEffects first; Windows suites are research references.
-5. **Safety** — loud enhancers end with limiters; fatigue matters as much as “wow”.
+1. **Platform over pack** — knowledge and calibration outrank shipping more JSON.
+2. **Open over opaque** — every chain is inspectable, not a closed driver knob.
+3. **Honest approximations** — we map commercial *goals*, not bit-identical clones.
+4. **Evidence before seals** — [CERTIFICATION](validation/CERTIFICATION.md) gates only.
+5. **Linux-native** — PipeWire + EasyEffects first.
+6. **Safety** — limiters on loud chains; fatigue is a first-class metric.
 
 ## Objectives
 
-- Ship **production-ready** EasyEffects presets with consistent naming
-- Maintain a **research lab** and feature matrix vs commercial DSP
-- Document **install paths** for APT and Flatpak
-- Explain **PipeWire** latency / quantum trade-offs
-- Help with **MPV** stereo downmix for 5.1 cinema
-- Enforce listening methodology and preset history
-- Stay easy to **contribute** to (templates, validation, CoC)
+- Provide **knowledge, calibration, research, profiles, and tools** for Linux audio users
+- Maintain auditable EasyEffects profiles with datasheets and history
+- Grow hardware scorecards (Realtek, DAC, HDMI, BT, headphones, …)
+- Keep a research lab and commercial feature matrix
+- Document install, PipeWire, and MPV paths
+- Enforce listening methodology and community process
+- Evolve toward a documentation site ([docs/site/](docs/site/)) through **v5.0**
 
 ## Screenshots
 
@@ -108,22 +128,16 @@ Full catalog: [presets/README.md](presets/README.md)
 
 ## Features
 
-- **11** output presets across **5** categories
-- Official certification program (forms, campaigns, reproducibility, profile dossiers)
-- Validation campaign + hardware DB + seals (Beta/Experimental/…)
-- Real EasyEffects screenshots (main / EQ / compressor)
-- Scientific datasheets, metrics (1–5), and test matrix
-- Hardware bank (8 categories) + A/B protocol
-- Research lab: FxSound, Dolby, DTS, Sonar, Peace, OEM suites
-- Audio engine handbook + official listening protocol
-- Documentary benchmark vs commercial enhancers
-- AutoEQ APO parser + **recommendation generator** (does not auto-edit presets)
-- Official IR candidate selected (IRCAM LISTEN — download-yourself)
-- One-command installer (`scripts/install.sh`) — Flatpak XDG **data** path aware
-- JSON + structure validation (`scripts/validate.sh`)
-- GitHub Actions CI
-- Guides for EasyEffects, PipeWire, and MPV
-- MIT licensed
+- **Audio Platform** layer (`platform/`) — databases, DSP KB, tools, community, governance
+- **11** output profiles across **5** categories (cards + `profiles.json` index)
+- Hardware taxonomy (Realtek/ALC*, DAC, HDMI, BT, speakers, headphones, IEM, …) + scorecards
+- Calibration playbooks + recommend-by-hardware search design
+- Certification program + listening campaigns + seals (Beta/Experimental/…)
+- Real EasyEffects screenshots and scientific datasheets
+- Research lab vs commercial DSP suites
+- AutoEQ recommendations + open IR catalog scores (no silent preset edits)
+- Future website IA under `docs/site/`
+- Installer, CI, PipeWire/MPV guides — MIT licensed
 
 ## Scientific methodology
 
@@ -142,6 +156,8 @@ Calibration playbooks: [calibration/](calibration/).
 
 | Resource | Description |
 |----------|-------------|
+| [platform/](platform/) | Audio Platform hub (databases, DSP KB, tools, governance) |
+| [docs/site/](docs/site/) | Future documentation website IA |
 | [research/](research/) | DSP research lab & commercial suite notes |
 | [research/FEATURE_MATRIX.md](research/FEATURE_MATRIX.md) | Capability matrix → EasyEffects equivalents |
 | [research/fxsound/MAPPING.md](research/fxsound/MAPPING.md) | FxSound knob → EasyEffects map |
@@ -220,14 +236,16 @@ cp presets/*/*.json ~/.local/share/easyeffects/output/
 
 ```text
 easyeffects-presets/
-├── validation/          # certification, campaigns, forms, profiles, dashboard
+├── platform/            # Audio Platform (databases, DSP KB, tools, governance)
+├── docs/site/           # Future website information architecture
+├── validation/          # certification, campaigns, forms, evidence
 ├── calibration/         # device-class playbooks
 ├── measurements/        # metrics, datasheets, version-history
 ├── research/            # commercial DSP research
 ├── docs/                # install + audio-engine + methodology
 ├── autoeq/              # APO parser + recommend.py (no auto-edit)
-├── impulse-responses/   # IR catalog + OFFICIAL_IR selection
-├── presets/             # categorized JSON + HISTORY
+├── impulse-responses/   # IR catalog + scores + OFFICIAL_IR
+├── presets/             # categorized JSON artifacts + HISTORY
 ├── release/             # checklists, notes, dist ZIP
 ├── screenshots/         # PNG gallery (from validation)
 ├── scripts/
@@ -329,27 +347,24 @@ More: [docs/INSTALL.md](docs/INSTALL.md), [docs/PIPEWIRE.md](docs/PIPEWIRE.md)
 | Phase | Focus | Status |
 |-------|-------|--------|
 | FASE 01–03 | Scaffold, research, DSP engineering | Done |
-| FASE 04 | UI validation campaign (VC-2026-08) + RC1 | Done |
-| FASE 05 | Certification / listening program | **Program live** · sessions pending |
-| FASE 06 | Fill listening forms → Validated → Stable v1.0.0 | Next |
+| FASE 04 | UI validation + RC1 | Done |
+| FASE 05 | Certification / listening program | Program live · sessions pending |
+| FASE 06 | **Audio Platform** (this phase) | **Scaffolding done** |
+| FASE 07 | Listening evidence → Validated → Stable v1.0.0 | Next |
 
-Product / packaging ideas:
+Product track:
 
-- [x] Real UI screenshots per preset (VC-2026-08)
-- [x] Certification criteria + listening forms + reproducibility
-- [x] AutoEQ recommendations (manual apply only)
-- [x] Official IR candidate selected (not vendored)
-- [ ] Subjective listening sessions → **Validated** seals
-- [ ] **v1.0.0 Stable** release (blocked on Validated gates)
-- [ ] Input (microphone) preset pack
-- [ ] Autoload examples per application
-- [ ] Device-specific EQ (laptop speakers, IEMs)
-- [ ] Convolver preset using official IR
+- [x] Platform architecture + profile/hardware databases
+- [x] DSP knowledge base + community + governance
+- [x] Website IA (`docs/site/`) + search design
+- [ ] Listening sessions → **Validated** seals → **v1.0.0 Stable**
+- [ ] Hardware search CLI · static site deploy
+- [ ] Convolver workflow with license-cleared IR pack
+- [ ] Input (mic) profiles · multi-HW Reference seals (v5)
 
-**Technical audio roadmap (v1 → v3):** see [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md).  
-**Release candidate:** [release/NOTES_v1.0.0-rc1.md](release/NOTES_v1.0.0-rc1.md)
+**Roadmap through v5.0:** [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md) · **RC1:** [release/NOTES_v1.0.0-rc1.md](release/NOTES_v1.0.0-rc1.md)
 
-Track releases in [CHANGELOG.md](CHANGELOG.md) and GitHub Issues.
+Track releases in [CHANGELOG.md](CHANGELOG.md).
 
 ## Credits
 

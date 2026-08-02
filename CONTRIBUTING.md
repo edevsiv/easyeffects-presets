@@ -1,6 +1,8 @@
 # Contributing
 
-Thanks for helping improve **EasyEffects Presets Premium**. Contributions of presets, docs, scripts, and fixes are welcome.
+Thanks for helping improve the **EasyEffects Audio Platform**. Contributions of knowledge, calibration, hardware scorecards, validation evidence, docs, tools, and (when justified) profile JSON are welcome.
+
+Community guides: [platform/community/](platform/community/) · Governance: [platform/GOVERNANCE.md](platform/GOVERNANCE.md)
 
 ## Code of conduct
 
@@ -8,10 +10,12 @@ Participation is governed by our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Ways to contribute
 
-- New or improved EasyEffects **output** presets (JSON)
-- Documentation fixes and translations
+- Hardware scorecards and calibration notes
+- Listening sessions and validation evidence
+- DSP knowledge / docs / website IA (`docs/site/`)
+- Tools that **recommend** (never silently rewrite presets)
+- New or improved EasyEffects **output** profiles (JSON) — only with datasheet + HISTORY + methodology
 - Installer / validation script improvements
-- Screenshots and A/B listening notes
 - Bug reports and feature requests via GitHub Issues
 
 ## Development setup

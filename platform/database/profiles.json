@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "updated": "2026-08-02",
+  "profiles": [
+    {
+      "id": "cinema-01",
+      "category": "movie",
+      "objective": "Clear dialogue and balanced cinema on laptop/desktop speakers",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "notebook",
+        "speakers-2.0",
+        "speakers-2.1"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "equalizer",
+        "bass_enhancer",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Equalizer \u2192 Bass Enhancer \u2192 Stereo Tools \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "No autogain; not night-mode DRC",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/movie/cinema-01.json",
+      "dossier": "validation/profiles/cinema-01.md",
+      "platform_card": "platform/audio-profiles/cinema-01.md"
+    },
+    {
+      "id": "cinema-02",
+      "category": "movie",
+      "objective": "Premium cinematic stack with autogain and multiband dynamics",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "notebook",
+        "speakers-2.0"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "autogain",
+        "multiband_compressor",
+        "equalizer",
+        "exciter",
+        "bass_enhancer",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Autogain \u2192 Multiband Compressor \u2192 Equalizer \u2192 Exciter \u2192 Bass Enhancer \u2192 Stereo Tools \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Heavy chain; fatigue risk",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/movie/cinema-02.json",
+      "dossier": "validation/profiles/cinema-02.md",
+      "platform_card": "platform/audio-profiles/cinema-02.md"
+    },
+    {
+      "id": "music-hd-01",
+      "category": "music",
+      "objective": "Musical clarity with controlled enhancement",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "headphones",
+        "usb-dac",
+        "notebook"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "equalizer",
+        "bass_enhancer",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Equalizer \u2192 Bass Enhancer \u2192 Stereo Tools \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "No AutoEQ correction yet",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/music/music-hd-01.json",
+      "dossier": "validation/profiles/music-hd-01.md",
+      "platform_card": "platform/audio-profiles/music-hd-01.md"
+    },
+    {
+      "id": "music-hd-02",
+      "category": "music",
+      "objective": "Fuller music enhancer stack",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "headphones",
+        "speakers-2.0"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "autogain",
+        "multiband_compressor",
+        "equalizer",
+        "exciter",
+        "bass_enhancer",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Autogain \u2192 Multiband \u2192 EQ \u2192 Exciter \u2192 Bass \u2192 Stereo \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Not fidelity-first",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/music/music-hd-02.json",
+      "dossier": "validation/profiles/music-hd-02.md",
+      "platform_card": "platform/audio-profiles/music-hd-02.md"
+    },
+    {
+      "id": "classic-music-01",
+      "category": "music",
+      "objective": "Light, natural classical / acoustic listening",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "headphones",
+        "usb-dac"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "equalizer",
+        "stereo_tools",
+        "reverb",
+        "limiter"
+      ],
+      "pipeline": "Equalizer \u2192 Stereo Tools \u2192 Reverb \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Light reverb may annoy purists",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/music/classic-music-01.json",
+      "dossier": "validation/profiles/classic-music-01.md",
+      "platform_card": "platform/audio-profiles/classic-music-01.md"
+    },
+    {
+      "id": "gaming-01",
+      "category": "gaming",
+      "objective": "Footsteps and positional cues with bright clarity",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "gaming",
+        "headphones",
+        "notebook"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "equalizer",
+        "bass_enhancer",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Equalizer \u2192 Bass Enhancer \u2192 Stereo Tools \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Bright EQ may fatigue",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/gaming/gaming-01.json",
+      "dossier": "validation/profiles/gaming-01.md",
+      "platform_card": "platform/audio-profiles/gaming-01.md"
+    },
+    {
+      "id": "gaming-02",
+      "category": "gaming",
+      "objective": "Immersive gaming enhancer stack",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "gaming",
+        "speakers-2.0"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "autogain",
+        "multiband_compressor",
+        "equalizer",
+        "exciter",
+        "bass_enhancer",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Autogain \u2192 Multiband \u2192 EQ \u2192 Exciter \u2192 Bass \u2192 Stereo \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Positional purity < gaming-01",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/gaming/gaming-02.json",
+      "dossier": "validation/profiles/gaming-02.md",
+      "platform_card": "platform/audio-profiles/gaming-02.md"
+    },
+    {
+      "id": "voice-boost-01",
+      "category": "voice",
+      "objective": "Speech intelligibility boost (output)",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "notebook",
+        "headphones"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "equalizer",
+        "compressor",
+        "deesser",
+        "limiter"
+      ],
+      "pipeline": "Equalizer \u2192 Compressor \u2192 De-esser \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Output-only; not mic chain",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/voice/voice-boost-01.json",
+      "dossier": "validation/profiles/voice-boost-01.md",
+      "platform_card": "platform/audio-profiles/voice-boost-01.md"
+    },
+    {
+      "id": "voice-boost-02",
+      "category": "voice",
+      "objective": "Richer hybrid speech / content chain",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "notebook",
+        "speakers-2.0"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "autogain",
+        "equalizer",
+        "compressor",
+        "exciter",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Autogain \u2192 EQ \u2192 Compressor \u2192 Exciter \u2192 Stereo \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Not a broadcast voice processor",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/voice/voice-boost-02.json",
+      "dossier": "validation/profiles/voice-boost-02.md",
+      "platform_card": "platform/audio-profiles/voice-boost-02.md"
+    },
+    {
+      "id": "volume-booster-01",
+      "category": "experimental",
+      "objective": "Simple loudness shelf boost",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "notebook"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "equalizer",
+        "limiter"
+      ],
+      "pipeline": "Equalizer \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "Crude flat boost",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Beta",
+      "preset_path": "presets/experimental/volume-booster-01.json",
+      "dossier": "validation/profiles/volume-booster-01.md",
+      "platform_card": "platform/audio-profiles/volume-booster-01.md"
+    },
+    {
+      "id": "fxsound-ultimate-02",
+      "category": "experimental",
+      "objective": "FxSound-inspired wow-factor enhancer",
+      "version": "1.0.0-rc1",
+      "recommended_hardware": [
+        "headphones",
+        "speakers-2.0"
+      ],
+      "validated_hardware": [
+        "HW-001"
+      ],
+      "plugins": [
+        "autogain",
+        "multiband_compressor",
+        "equalizer",
+        "exciter",
+        "bass_enhancer",
+        "stereo_tools",
+        "limiter"
+      ],
+      "pipeline": "Autogain \u2192 Multiband \u2192 EQ \u2192 Exciter \u2192 Bass \u2192 Stereo \u2192 Limiter",
+      "history": "presets/HISTORY.md",
+      "limitations": "High fatigue risk",
+      "compatibility": {
+        "easyeffects": "8.x",
+        "pipewire": "1.0+",
+        "notes": "HW-001 UI verified"
+      },
+      "license": "MIT",
+      "seal": "Experimental",
+      "preset_path": "presets/experimental/fxsound-ultimate-02.json",
+      "dossier": "validation/profiles/fxsound-ultimate-02.md",
+      "platform_card": "platform/audio-profiles/fxsound-ultimate-02.md"
+    }
+  ]
+}

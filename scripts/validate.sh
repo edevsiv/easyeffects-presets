@@ -35,6 +35,15 @@ REQUIRED_DIRS=(
   impulse-responses
   impulse-responses/catalog
   release
+  platform
+  platform/database
+  platform/audio-profiles
+  platform/hardware
+  platform/dsp
+  platform/tools
+  platform/community
+  docs/site
+  docs/site/pages
   .github/workflows
 )
 
@@ -46,6 +55,12 @@ REQUIRED_FILES=(
   CODE_OF_CONDUCT.md
   SECURITY.md
   AUDIO_ROADMAP.md
+  platform/README.md
+  platform/ARCHITECTURE.md
+  platform/GOVERNANCE.md
+  platform/RELEASE_STRATEGY.md
+  platform/database/profiles.json
+  docs/site/README.md
   .gitignore
   .editorconfig
   docs/INSTALL.md

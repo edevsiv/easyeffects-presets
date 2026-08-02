@@ -1,94 +1,104 @@
 # Audio technical roadmap
 
-Engineering roadmap for EasyEffects Presets Premium from the current laboratory baseline toward **v3.0**.
+Engineering roadmap for the **EasyEffects Audio Platform** (knowledge, calibration, research, profiles, and tools for Linux audio) through **v5.0**.
 
-Related: [CHANGELOG.md](CHANGELOG.md) · [research/](research/) · [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md)
+Related: [CHANGELOG.md](CHANGELOG.md) · [platform/](platform/) · [platform/RELEASE_STRATEGY.md](platform/RELEASE_STRATEGY.md)
 
 ## Vision
 
-Become the primary **open-source reference** for EasyEffects presets by combining:
+Become the primary **open-source Linux audio engineering platform** around EasyEffects + PipeWire by combining:
 
-1. Auditable DSP chains
-2. Documented mappings from commercial suites
-3. Strict listening protocol
-4. Measurement-friendly workflow
+1. Auditable DSP profiles
+2. Hardware calibration & scorecards
+3. DSP knowledge base (why / when / how)
+4. Research mappings from commercial suites
+5. Strict listening / certification protocol
+6. Tools that recommend — without silently rewriting user chains
 
 ## Version plan
 
-### v1.x — Foundation (current)
+### v1.x — Laboratory foundation (done → in progress)
 
 | Track | Status |
 |-------|--------|
 | Repo scaffold, CI, install scripts | Done (FASE 01) |
 | Research lab + feature matrix | Done (FASE 02) |
-| Audio engine handbook | Done (FASE 02) |
-| Official test protocol | Done (FASE 02) |
-| Documentary benchmark | Done (FASE 02) |
-| Preset history ledger | Done (FASE 02) |
-| Metrics + datasheets + hardware bank | Done (FASE 03) |
-| A/B protocol + FxSound mapping | Done (FASE 03) |
-| Design-audit optimization of `*-02` | Done (FASE 03) |
-| AutoEQ architecture + IR catalog | Done (FASE 03, design only) |
+| Metrics, datasheets, design-audit | Done (FASE 03) |
 | UI validation campaign + RC1 | Done (FASE 04) |
-| Certification program + listening forms | Done (FASE 05 scaffolding) |
+| Certification / listening program | Done scaffolding (FASE 05) |
+| **Audio Platform layer** | **Done scaffolding (FASE 06)** |
 | Human listening sessions on P0 hardware | Pending (VC-2026-08-LISTEN) |
 
-**Exit criteria for listening-validated v1.0.0:** checklist in [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md).
+**Exit criteria for listening-validated v1.0.0 Stable:** [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md).
 
-### v1.1 — Listening iteration (FASE 06)
+### v1.1 — Evidence & Validated seals (FASE 07 focus)
 
-- Fill `validation/campaigns/VC-2026-08-LISTEN/sessions/` for all categories
+- Fill listening sessions per category on HW-001
 - Promote Beta → Validated where CERTIFICATION gates pass
 - Cut **v1.0.0 Stable** when Stable gates pass
-- Tune `*-01` presets for fatigue reduction based on forms
-- Publish first “known good devices” notes (2–3 headphones)
+- First community hardware scorecards beyond HW-001
 
-### v1.2 — FxSound / Dolby inspired refinement
+### v1.2 — FxSound / Dolby-inspired refinement
 
-- Parameter translation tables (FxSound knobs → EE plugins)
-- Split experimental enhancer into `fxsound-clarity` / `fxsound-bass` variants
-- Cinema night mode (stronger DRC, quieter peaks)
+- Parameter translation tables kept current
+- Optional enhancer splits (clarity / bass) — only with datasheets
+- Cinema night-mode profile (stronger DRC) when methodology OK
 
-### v2.0 — Correction & convolution
+### v2.0 — Correction & convolution platform
 
-- Populate `autoeq/` conversion tooling
-- First Convolver-based headphone correction presets
-- Curated open IRs under `impulse-responses/`
-- Optional per-device preset naming scheme
+- AutoEQ CLI recommend path mature ([autoeq/INTEGRATION.md](autoeq/INTEGRATION.md))
+- First Convolver workflows with scored open IRs
+- Optional `no-eq` content profile variants (manual apply)
 
-### v2.1 — Gaming routing
+### v2.1 — Gaming & routing
 
-- Document PipeWire ChatMix-like setups
-- Competitive vs immersive gaming pairs validated on 3 titles each
-- Input preset pack draft (mic)
+- PipeWire ChatMix-like documentation
+- Competitive vs immersive pairs validated on multiple titles
+- Input (mic) profile pack draft
 
 ### v3.0 — Laboratory maturity
 
-- Blind A/B harness notes + aggregated scores
-- Public “methodology paper” style doc in `docs/`
-- Stable preset API/versioning (`preset_version` metadata where feasible)
-- Packaging (AUR/Nix/optional) and tagged data releases for IRs
+- Aggregated blind A/B notes
+- Methodology paper-style doc
+- Stable profile metadata conventions
+- Packaging helpers (AUR/Nix optional)
 
-## Architecture of presets (target)
+### v4.0 — Website & search
+
+- Static site from [docs/site/](docs/site/)
+- Hardware → profile search UI
+- Published dashboards from validation statistics
+
+### v5.0 — Platform completeness
+
+- Multi-HW Reference seals for core categories
+- Community calibration corpus (≥20 listening logs)
+- Optional offline recommender reading `platform/database/profiles.json`
+- IR data releases (license-cleared) separate from code tags
+
+## Architecture (target)
 
 ```text
-Content category → Chain archetype → Plugin parameters → Protocol → Measurement log → Release
-                       ↑
-              research/FEATURE_MATRIX.md
+Hardware identity → Calibration → Search/recommend → Profile card → JSON artifact
+                           ↘ AutoEQ / Convolver layers
+                                    ↓
+                           Listening → Certification seals → Release channel
 ```
 
 ## Non-goals
 
 - Bit-identical clones of Dolby/DTS/Nahimic
 - Shipping copyrighted media or proprietary IR databases
+- Silent auto-edit of user presets
 - Replacing EasyEffects upstream development
 
 ## Success metrics
 
-| Metric | Target by v3.0 |
+| Metric | Target by v5.0 |
 |--------|----------------|
-| Presets with complete history + logs | 100% |
-| Commercial features mapped | Matrix kept current |
-| Open HRTF/correction presets | ≥ 5 documented |
-| Contributor test logs merged | ≥ 20 |
-| CI + protocol compliance | Required on DSP PRs |
+| Profiles with complete cards + HISTORY | 100% |
+| Hardware classes with ≥1 scorecard | ≥ 10 |
+| Open IR workflows documented | ≥ 5 |
+| Contributor listening sessions merged | ≥ 20 |
+| Site routes implemented | docs/site IA live |
+| CI + governance on DSP/seal PRs | Required |

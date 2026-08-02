@@ -2,6 +2,8 @@
 
 **No binary IRs are vendored yet.** This catalog lists candidate open sources for future Convolver presets.
 
+Scored shortlist: [SCORECARD.md](SCORECARD.md) · Research notes: [OPEN_IR_RESEARCH.md](OPEN_IR_RESEARCH.md) · Official pick: [../OFFICIAL_IR.md](../OFFICIAL_IR.md)
+
 | Dataset | Type | License / access | Use case | Notes |
 |---------|------|------------------|----------|-------|
 | [MIT KEMAR](https://sound.media.mit.edu/resources/KEMAR.html) | HRTF | Historically widely used in research; verify current terms | Headphone virtualization experiments | Classic dummy-head |
