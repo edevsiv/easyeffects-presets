@@ -1,0 +1,29 @@
+name: Validate repository
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate-json:
+    name: Validate JSON presets & structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3 jq
+
+      - name: Validate JSON and structure
+        run: |
+          chmod +x scripts/validate.sh
+          ./scripts/validate.sh
+
+      - name: Check Markdown links (basic)
+        run: |
+          python3 scripts/check_markdown_links.py

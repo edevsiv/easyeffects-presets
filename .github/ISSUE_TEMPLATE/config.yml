@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: EasyEffects upstream
+    url: https://github.com/wwmm/easyeffects
+    about: Bugs in EasyEffects itself should be reported upstream.
+  - name: Community presets wiki
+    url: https://github.com/wwmm/easyeffects/wiki/Community-Presets
+    about: Other community preset collections.

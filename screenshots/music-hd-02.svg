@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="music-hd-02 — Music screenshot placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1419"/>
+      <stop offset="100%" stop-color="#1a2332"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ddea2"/>
+      <stop offset="100%" stop-color="#7ddea2" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <text x="48" y="64" fill="#e8eef7" font-family="DejaVu Sans, Ubuntu, sans-serif" font-size="28" font-weight="700">EasyEffects Presets Premium</text>
+  <text x="48" y="104" fill="#7ddea2" font-family="DejaVu Sans, Ubuntu, sans-serif" font-size="22">music-hd-02 — Music</text>
+  <text x="48" y="140" fill="#8b9bb4" font-family="DejaVu Sans, Ubuntu, sans-serif" font-size="16">Screenshot placeholder — replace with a real EasyEffects capture</text>
+  <rect x="48" y="180" width="864" height="280" rx="12" fill="#121821" stroke="#2a3548"/>
+  <!-- fake EQ bars -->
+  <g transform="translate(80,200)">
+    <rect x="0" y="120" width="36" height="140" fill="url(#bar)" rx="4"/>
+    <rect x="60" y="80" width="36" height="180" fill="url(#bar)" rx="4"/>
+    <rect x="120" y="40" width="36" height="220" fill="url(#bar)" rx="4"/>
+    <rect x="180" y="90" width="36" height="170" fill="url(#bar)" rx="4"/>
+    <rect x="240" y="60" width="36" height="200" fill="url(#bar)" rx="4"/>
+    <rect x="300" y="30" width="36" height="230" fill="url(#bar)" rx="4"/>
+    <rect x="360" y="70" width="36" height="190" fill="url(#bar)" rx="4"/>
+    <rect x="420" y="100" width="36" height="160" fill="url(#bar)" rx="4"/>
+    <rect x="480" y="50" width="36" height="210" fill="url(#bar)" rx="4"/>
+    <rect x="540" y="110" width="36" height="150" fill="url(#bar)" rx="4"/>
+    <rect x="600" y="75" width="36" height="185" fill="url(#bar)" rx="4"/>
+    <rect x="660" y="95" width="36" height="165" fill="url(#bar)" rx="4"/>
+    <rect x="720" y="55" width="36" height="205" fill="url(#bar)" rx="4"/>
+    <rect x="780" y="130" width="36" height="130" fill="url(#bar)" rx="4"/>
+  </g>
+  <text x="48" y="510" fill="#5c6b82" font-family="DejaVu Sans, Ubuntu, sans-serif" font-size="14">screenshots/music-hd-02.svg</text>
+</svg>
