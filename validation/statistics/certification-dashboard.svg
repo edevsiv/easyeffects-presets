@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+  <rect width="1000" height="560" fill="#0b1220"/>
+  <text x="40" y="48" fill="#f2f6fc" font-family="DejaVu Sans,sans-serif" font-size="26" font-weight="700">Certification dashboard</text>
+  <text x="40" y="78" fill="#8b9bb4" font-family="DejaVu Sans,sans-serif" font-size="14">FASE 05 · evidence-first · no Validated promotions without listening forms</text>
+  <g font-family="DejaVu Sans,sans-serif" font-size="14" fill="#e8eef7">
+    <text x="40" y="140">Beta</text><rect x="200" y="122" width="400" height="26" fill="#5bbcff"/><text x="620" y="140">10</text>
+    <text x="40" y="190">Experimental</text><rect x="200" y="172" width="40" height="26" fill="#ffd166"/><text x="260" y="190">1</text>
+    <text x="40" y="240">Validated</text><rect x="200" y="222" width="4" height="26" fill="#2a3548"/><text x="220" y="240">0</text>
+    <text x="40" y="290">Stable / Reference</text><rect x="200" y="272" width="4" height="26" fill="#2a3548"/><text x="220" y="290">0</text>
+    <text x="40" y="360">UI tests</text><rect x="200" y="342" width="220" height="26" fill="#7ddea2"/><text x="440" y="360">11</text>
+    <text x="40" y="410">Listening sessions</text><rect x="200" y="392" width="4" height="26" fill="#ff8b6b"/><text x="220" y="410">0</text>
+  </g>
+  <text x="40" y="480" fill="#9eb0c8" font-family="DejaVu Sans,sans-serif" font-size="14">Hardware: HW-001 · Tag: v1.0.0-rc1 · Stable: blocked</text>
+  <text x="40" y="530" fill="#5c6b82" font-family="DejaVu Sans,sans-serif" font-size="12">validation/statistics/certification-dashboard.svg</text>
+</svg>

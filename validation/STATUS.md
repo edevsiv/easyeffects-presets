@@ -4,24 +4,32 @@
 |------|---------|
 | Experimental | Ships for testing; known risks / incomplete evidence |
 | Beta | Loads on reference HW with screenshots; listening incomplete |
-| Validated | Passed campaign metrics on ≥1 P0 device with A/B log |
-| Stable | Validated + no critical regressions across releases |
-| Reference | Community gold standard for a category |
+| Validated | Passed certification listening gates on ≥1 P0 device |
+| Stable | Validated + release regression gates |
+| Reference | Multi-listener / multi-HW gold standard |
 
-## Current seals (VC-2026-08)
+Criteria: [CERTIFICATION.md](CERTIFICATION.md)
+
+## Current seals (FASE 05 / 2026-08-02)
 
 | Preset | Seal | Notes |
 |--------|------|-------|
-| `cinema-01` | **Beta** | EE8 compat fixes + UI screenshots on HW-001 |
-| `cinema-02` | **Beta** | UI screenshots on HW-001; heavy chain |
-| `music-hd-01` | **Beta** | EE8 limiter migration + UI screenshots |
-| `music-hd-02` | **Beta** | UI screenshots; enhancer chain |
-| `classic-music-01` | **Beta** | EE8 limiter migration + UI screenshots |
-| `gaming-01` | **Beta** | EE8 bass/limiter fixes + UI screenshots |
-| `gaming-02` | **Beta** | UI screenshots; immersion chain |
-| `voice-boost-01` | **Beta** | EE8 limiter migration + UI screenshots |
-| `voice-boost-02` | **Beta** | UI screenshots after FASE03 trim |
-| `volume-booster-01` | **Beta** | EE8 limiter migration + UI screenshots |
-| `fxsound-ultimate-02` | **Experimental** | Enhancer showcase; UI screenshots; listening pending |
+| `cinema-01` | **Beta** | UI certified; listening pending |
+| `cinema-02` | **Beta** | UI certified; listening pending |
+| `music-hd-01` | **Beta** | UI certified; listening pending |
+| `music-hd-02` | **Beta** | UI certified; listening pending |
+| `classic-music-01` | **Beta** | UI certified; listening pending |
+| `gaming-01` | **Beta** | UI certified; listening pending |
+| `gaming-02` | **Beta** | UI certified; listening pending |
+| `voice-boost-01` | **Beta** | UI certified; listening pending |
+| `voice-boost-02` | **Beta** | UI certified; listening pending |
+| `volume-booster-01` | **Beta** | UI certified; listening pending |
+| `fxsound-ultimate-02` | **Experimental** | Enhancer showcase; not promoted |
 
-No preset is **Validated** / **Stable** / **Reference** until subjective A/B logs are filed under `validation/logs/`.
+## Promotion log (FASE 05)
+
+| Preset | From | To | Reason |
+|--------|------|----|--------|
+| _(none)_ | — | — | Validated gates V1–V6 not met (no subjective forms) |
+
+**v1.0.0 Stable:** blocked.

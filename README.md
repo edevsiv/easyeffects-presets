@@ -18,12 +18,52 @@ Curated, categorized **EasyEffects** output presets for **PipeWire** on Linux �
 
 | Item | Status |
 |------|--------|
-| Campaign | [VC-2026-08](validation/CAMPAIGN_VC-2026-08.md) (open) |
-| Hardware tested | [HW-001 Acer Nitro AN515-51](validation/hardware/HW-001-acer-nitro-an515-51.md) (Realtek ALC255) |
-| Screenshots | Real EasyEffects 8.2.8 PNG captures (all 11 presets) |
-| Preset seals | Mostly **Beta** — see [validation/STATUS.md](validation/STATUS.md) |
-| Listening tests | UI/compat complete; subjective A/B per category **pending** |
-| Scientific method | Metrics → datasheets → UI evidence → A/B protocol → seals |
+| Dashboard | [validation/dashboard.md](validation/dashboard.md) |
+| Certification criteria | [validation/CERTIFICATION.md](validation/CERTIFICATION.md) |
+| UI campaign | [VC-2026-08](validation/CAMPAIGN_VC-2026-08.md) — complete (screenshots + ui-load) |
+| Listening campaign | [VC-2026-08-LISTEN](validation/campaigns/VC-2026-08-LISTEN/) — **open · 0 sessions** |
+| Reference hardware | [HW-001 Acer Nitro AN515-51](validation/hardware/HW-001-acer-nitro-an515-51.md) (Realtek ALC255) |
+| Seals | **10 Beta · 1 Experimental · 0 Validated · 0 Stable** — [STATUS.md](validation/STATUS.md) |
+| Profile dossiers | [validation/profiles/](validation/profiles/) |
+| Stable release | **Blocked** until Validated gates (listening forms) |
+
+## Reference hardware
+
+| ID | Device | Role |
+|----|--------|------|
+| HW-001 | Acer Nitro AN515-51 · Realtek ALC255 · PipeWire 1.0.5 · EasyEffects Flatpak 8.2.8 | P0 reference (UI + pending listening) |
+
+Categories: notebook, desktop, USB DAC, headphones, gaming, Bluetooth, speakers 2.0 / 2.1 — see [validation/hardware/](validation/hardware/).
+
+Reproducibility pack: [validation/reproducibility/](validation/reproducibility/).
+
+## Listening campaign
+
+Official subjective program (FASE 05):
+
+| Resource | Path |
+|----------|------|
+| Protocol | [validation/forms/SESSION_PROTOCOL.md](validation/forms/SESSION_PROTOCOL.md) |
+| Questionnaire | [validation/forms/LISTENING_FORM.md](validation/forms/LISTENING_FORM.md) |
+| Campaign | [VC-2026-08-LISTEN](validation/campaigns/VC-2026-08-LISTEN/) |
+| Listeners | [validation/listeners/](validation/listeners/) |
+
+Scores: Voice Clarity, Bass, Treble, Stereo, Dynamic Range, Fatigue, Immersion, Naturalness, Overall + comments.
+
+## Scientific validation
+
+Promotion path (objective gates only):
+
+`Experimental → Beta → Validated → Stable → Reference`
+
+| Seal | Evidence bar (summary) |
+|------|------------------------|
+| Beta | Loads on reference HW + screenshots / ui-load |
+| Validated | Listening form + A/B vs Flat + metric gates |
+| Stable | Validated + release regression checklist |
+| Reference | Multi-listener / multi-HW gold |
+
+Full gates: [validation/CERTIFICATION.md](validation/CERTIFICATION.md). Engineering method: metrics → datasheets → UI evidence → listening → seals.
 
 ## Description
 
@@ -69,14 +109,16 @@ Full catalog: [presets/README.md](presets/README.md)
 ## Features
 
 - **11** output presets across **5** categories
-- Official validation campaign with hardware DB + seals (Beta/Experimental/…)
+- Official certification program (forms, campaigns, reproducibility, profile dossiers)
+- Validation campaign + hardware DB + seals (Beta/Experimental/…)
 - Real EasyEffects screenshots (main / EQ / compressor)
 - Scientific datasheets, metrics (1–5), and test matrix
-- Hardware bank + A/B protocol (old / new / Flat / FxSound / Dolby)
+- Hardware bank (8 categories) + A/B protocol
 - Research lab: FxSound, Dolby, DTS, Sonar, Peace, OEM suites
 - Audio engine handbook + official listening protocol
 - Documentary benchmark vs commercial enhancers
-- AutoEQ APO parser (experimental) + open IR selection checklist
+- AutoEQ APO parser + **recommendation generator** (does not auto-edit presets)
+- Official IR candidate selected (IRCAM LISTEN — download-yourself)
 - One-command installer (`scripts/install.sh`) — Flatpak XDG **data** path aware
 - JSON + structure validation (`scripts/validate.sh`)
 - GitHub Actions CI
@@ -91,8 +133,8 @@ Presets are engineered products, not vibe tweaks.
 2. **Set parameters** with datasheet justification ([measurements/datasheets/](measurements/datasheets/))
 3. **design-audit** scorecard against category weights
 4. **UI-load / screenshot evidence** on registered hardware ([validation/](validation/))
-5. **A/B test** vs previous revision + Flat (+ FxSound/Dolby when relevant)
-6. **Assign seal** (Experimental → Beta → Validated → Stable)
+5. **Listening form** + A/B vs Flat ([validation/forms/](validation/forms/))
+6. **Assign seal** only when [CERTIFICATION](validation/CERTIFICATION.md) gates pass
 
 Calibration playbooks: [calibration/](calibration/).
 
@@ -107,10 +149,14 @@ Calibration playbooks: [calibration/](calibration/).
 | [docs/methodology/TEST_PROTOCOL.md](docs/methodology/TEST_PROTOCOL.md) | Official preset validation protocol |
 | [docs/methodology/AB_TESTING.md](docs/methodology/AB_TESTING.md) | Official A/B protocol |
 | [measurements/](measurements/) | Metrics, datasheets, hardware, logs |
-| [validation/](validation/) | Official campaign, seals, screenshots, results |
+| [validation/](validation/) | Certification lab, seals, screenshots, results |
+| [validation/CERTIFICATION.md](validation/CERTIFICATION.md) | Promotion gates (Beta → Reference) |
+| [validation/dashboard.md](validation/dashboard.md) | Certification dashboard |
+| [validation/campaigns/](validation/campaigns/) | Listening campaigns |
 | [calibration/](calibration/) | Device-class calibration playbooks |
 | [autoeq/ARCHITECTURE.md](autoeq/ARCHITECTURE.md) | AutoEQ integration design |
-| [autoeq/convert_apo_to_bands.py](autoeq/convert_apo_to_bands.py) | Experimental APO parser |
+| [autoeq/recommend.py](autoeq/recommend.py) | Experimental recommendation generator |
+| [impulse-responses/OFFICIAL_IR.md](impulse-responses/OFFICIAL_IR.md) | First official IR candidate |
 | [impulse-responses/SELECTION.md](impulse-responses/SELECTION.md) | Open IR selection checklist |
 | [references/](references/) | Reference films, music, speech, games |
 | [benchmark/](benchmark/) | Comparative benchmark scorecard |
@@ -174,13 +220,13 @@ cp presets/*/*.json ~/.local/share/easyeffects/output/
 
 ```text
 easyeffects-presets/
-├── validation/          # campaign, hardware DB, seals, real screenshots
+├── validation/          # certification, campaigns, forms, profiles, dashboard
 ├── calibration/         # device-class playbooks
 ├── measurements/        # metrics, datasheets, version-history
 ├── research/            # commercial DSP research
 ├── docs/                # install + audio-engine + methodology
-├── autoeq/              # AutoEQ architecture + APO parser
-├── impulse-responses/   # IR catalog + selection checklist
+├── autoeq/              # APO parser + recommend.py (no auto-edit)
+├── impulse-responses/   # IR catalog + OFFICIAL_IR selection
 ├── presets/             # categorized JSON + HISTORY
 ├── release/             # checklists, notes, dist ZIP
 ├── screenshots/         # PNG gallery (from validation)
@@ -280,15 +326,25 @@ More: [docs/INSTALL.md](docs/INSTALL.md), [docs/PIPEWIRE.md](docs/PIPEWIRE.md)
 
 ## Roadmap
 
+| Phase | Focus | Status |
+|-------|-------|--------|
+| FASE 01–03 | Scaffold, research, DSP engineering | Done |
+| FASE 04 | UI validation campaign (VC-2026-08) + RC1 | Done |
+| FASE 05 | Certification / listening program | **Program live** · sessions pending |
+| FASE 06 | Fill listening forms → Validated → Stable v1.0.0 | Next |
+
 Product / packaging ideas:
 
 - [x] Real UI screenshots per preset (VC-2026-08)
+- [x] Certification criteria + listening forms + reproducibility
+- [x] AutoEQ recommendations (manual apply only)
+- [x] Official IR candidate selected (not vendored)
+- [ ] Subjective listening sessions → **Validated** seals
+- [ ] **v1.0.0 Stable** release (blocked on Validated gates)
 - [ ] Input (microphone) preset pack
 - [ ] Autoload examples per application
-- [ ] AUR / packaging helpers
 - [ ] Device-specific EQ (laptop speakers, IEMs)
-- [ ] Convolver / HRTF demos (IRs selected, not vendored yet)
-- [ ] Subjective A/B logs → **Validated** seals → v1.0.0 Stable
+- [ ] Convolver preset using official IR
 
 **Technical audio roadmap (v1 → v3):** see [AUDIO_ROADMAP.md](AUDIO_ROADMAP.md).  
 **Release candidate:** [release/NOTES_v1.0.0-rc1.md](release/NOTES_v1.0.0-rc1.md)

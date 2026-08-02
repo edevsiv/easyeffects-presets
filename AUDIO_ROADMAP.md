@@ -29,15 +29,18 @@ Become the primary **open-source reference** for EasyEffects presets by combinin
 | A/B protocol + FxSound mapping | Done (FASE 03) |
 | Design-audit optimization of `*-02` | Done (FASE 03) |
 | AutoEQ architecture + IR catalog | Done (FASE 03, design only) |
-| Human A/B logs on P0 hardware | Pending |
+| UI validation campaign + RC1 | Done (FASE 04) |
+| Certification program + listening forms | Done (FASE 05 scaffolding) |
+| Human listening sessions on P0 hardware | Pending (VC-2026-08-LISTEN) |
 
 **Exit criteria for listening-validated v1.0.0:** checklist in [release/CHECKLIST_v1.0.0.md](release/CHECKLIST_v1.0.0.md).
 
-### v1.1 — Listening iteration
+### v1.1 — Listening iteration (FASE 06)
 
-- Fill `measurements/` with real logs for all 11 presets
-- Replace SVG screenshot placeholders with UI captures
-- Tune `*-01` presets for fatigue reduction
+- Fill `validation/campaigns/VC-2026-08-LISTEN/sessions/` for all categories
+- Promote Beta → Validated where CERTIFICATION gates pass
+- Cut **v1.0.0 Stable** when Stable gates pass
+- Tune `*-01` presets for fatigue reduction based on forms
 - Publish first “known good devices” notes (2–3 headphones)
 
 ### v1.2 — FxSound / Dolby inspired refinement

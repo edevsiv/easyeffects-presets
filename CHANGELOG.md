@@ -9,28 +9,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Official validation campaign **VC-2026-08** (`validation/`)
-- Hardware database entry HW-001 (Acer Nitro AN515-51, Realtek ALC255)
-- Real EasyEffects 8.2.8 PNG screenshots for all presets
-- Validation seals (Experimental / Beta / …)
-- Calibration playbooks (`calibration/`)
-- AutoEQ experimental APO parser script
-- Open IR selection checklist
-- Release candidate notes + preset ZIP (`release/`)
-- Screenshot capture scripts
+- **FASE 05** official certification / listening program
+  - Criteria: `validation/CERTIFICATION.md`
+  - Forms: `SESSION_PROTOCOL.md`, `LISTENING_FORM.md`
+  - Campaign: `validation/campaigns/VC-2026-08-LISTEN/`
+  - Listeners, reproducibility packs, per-profile dossiers
+  - Dashboard + certification statistics SVG
+  - Hardware categories: notebook, desktop, USB DAC, headphones, gaming, Bluetooth, 2.0, 2.1
+- AutoEQ experimental `recommend.py` (Markdown recommendations; does not mutate presets)
+- Official IR candidate: IRCAM LISTEN (`impulse-responses/OFFICIAL_IR.md`) — download-yourself
 
 ### Changed
 
-- EasyEffects 8 compatibility: migrate legacy `bass_enhancer` scope/blend and `limiter` schema on `*-01` presets
-- `scripts/install.sh` prefers Flatpak XDG **data** output path (EE8)
-- README gallery uses PNG captures instead of SVG placeholders
+- README: Validation Status, Reference Hardware, Listening Campaign, Scientific Validation, Roadmap
+- Seal evaluation: no Validated/Stable promotions without filled listening forms
 
 ### Planned
 
-- Subjective A/B logs per category → Validated seals → v1.0.0 Stable
-- Filled measurement logs for all presets on more devices
+- Fill VC-2026-08-LISTEN sessions → evaluate Validated gates → v1.0.0 Stable
+- Convolver preset using official IR (after license-safe packaging decision)
 - Additional headphone-oriented EQ profiles (AutoEQ overlays)
 - Autoload examples for application-specific routing
+
+## [1.0.0-rc1] notes carried forward
+
+FASE 04 delivered: VC-2026-08 UI campaign, HW-001, real screenshots, EE8 schema fixes, calibration playbooks, APO parser, IR selection checklist.
 
 ## [1.0.0-rc1] - 2026-08-02
 
